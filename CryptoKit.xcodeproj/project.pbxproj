@@ -66,10 +66,18 @@
 		DFD16A5F1D72E73300ACDBC8 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				DFD16A651D72EA3700ACDBC8 /* Supporting Files */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		DFD16A651D72EA3700ACDBC8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				DFD16A601D72E73300ACDBC8 /* CryptoKit.h */,
 				DFD16A611D72E73300ACDBC8 /* Info.plist */,
 			);
-			path = Sources;
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -649,6 +657,7 @@
 				DFD16A441D72E67200ACDBC8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DFD16A4F1D72E68400ACDBC8 /* Build configuration list for PBXNativeTarget "CryptoKit iOS" */ = {
 			isa = XCConfigurationList;
@@ -657,6 +666,7 @@
 				DFD16A511D72E68400ACDBC8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DFD16A5C1D72E6B400ACDBC8 /* Build configuration list for PBXNativeTarget "CryptoKit watchOS" */ = {
 			isa = XCConfigurationList;
@@ -665,6 +675,7 @@
 				DFD16A5E1D72E6B400ACDBC8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
