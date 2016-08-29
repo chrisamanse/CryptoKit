@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		DF1521FE1D7449290068726D /* SHA1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1521FD1D7449290068726D /* SHA1Tests.swift */; };
+		DF1522001D74512C0068726D /* Digest+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1521FF1D74512C0068726D /* Digest+Common.swift */; };
+		DF1522011D74512C0068726D /* Digest+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1521FF1D74512C0068726D /* Digest+Common.swift */; };
+		DF1522021D74512C0068726D /* Digest+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1521FF1D74512C0068726D /* Digest+Common.swift */; };
 		DF236CE01D73F45F00EFF79B /* SHA1.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF236CDF1D73F45F00EFF79B /* SHA1.swift */; };
 		DF236CE11D73F45F00EFF79B /* SHA1.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF236CDF1D73F45F00EFF79B /* SHA1.swift */; };
 		DF236CE21D73F45F00EFF79B /* SHA1.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF236CDF1D73F45F00EFF79B /* SHA1.swift */; };
@@ -46,6 +49,7 @@
 
 /* Begin PBXFileReference section */
 		DF1521FD1D7449290068726D /* SHA1Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHA1Tests.swift; sourceTree = "<group>"; };
+		DF1521FF1D74512C0068726D /* Digest+Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Digest+Common.swift"; sourceTree = "<group>"; };
 		DF236CDF1D73F45F00EFF79B /* SHA1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHA1.swift; sourceTree = "<group>"; };
 		DF8E681E1D74300B00EA7657 /* Digest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Digest.swift; sourceTree = "<group>"; };
 		DFB193961D743C2800563B09 /* Data+Digest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Digest.swift"; sourceTree = "<group>"; };
@@ -100,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				DF8E681E1D74300B00EA7657 /* Digest.swift */,
+				DF1521FF1D74512C0068726D /* Digest+Common.swift */,
 				DFD16A661D72EE7D00ACDBC8 /* MD5.swift */,
 				DF236CDF1D73F45F00EFF79B /* SHA1.swift */,
 			);
@@ -373,6 +378,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFD16A671D72EE7D00ACDBC8 /* MD5.swift in Sources */,
+				DF1522001D74512C0068726D /* Digest+Common.swift in Sources */,
 				DF8E681F1D74300B00EA7657 /* Digest.swift in Sources */,
 				DFDEB62B1D7350C100FEE448 /* BitwiseRotate.swift in Sources */,
 				DFB193971D743C2800563B09 /* Data+Digest.swift in Sources */,
@@ -386,6 +392,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFD16A681D72EE7D00ACDBC8 /* MD5.swift in Sources */,
+				DF1522011D74512C0068726D /* Digest+Common.swift in Sources */,
 				DF8E68201D74300B00EA7657 /* Digest.swift in Sources */,
 				DFDEB62C1D7350C100FEE448 /* BitwiseRotate.swift in Sources */,
 				DFB193981D743C2800563B09 /* Data+Digest.swift in Sources */,
@@ -399,6 +406,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFD16A691D72EE7D00ACDBC8 /* MD5.swift in Sources */,
+				DF1522021D74512C0068726D /* Digest+Common.swift in Sources */,
 				DF8E68211D74300B00EA7657 /* Digest.swift in Sources */,
 				DFDEB62D1D7350C100FEE448 /* BitwiseRotate.swift in Sources */,
 				DFB193991D743C2800563B09 /* Data+Digest.swift in Sources */,
