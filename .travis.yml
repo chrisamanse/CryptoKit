@@ -1,0 +1,10 @@
+language: objective-c
+xcode_workspace: CryptoKit.xcworkspace
+osx_image: xcode8
+matrix:
+  include:
+    - SCHEME="CryptoKit macOS" SDK="macosx10.12"
+    - SCHEME="CryptoKit iOS" SDK="iphonesimulator10.0"
+    - SCHEME="CryptoKit watchOS" SDK="watchos3.0"
+script:
+  - xcodebuild -project CryptoKit.xcodeproj -scheme "$SCHEME" -sdk "$SDK" test | xcpretty -c
