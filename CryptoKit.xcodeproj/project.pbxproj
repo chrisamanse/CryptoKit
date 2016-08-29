@@ -133,7 +133,7 @@
 			path = "Bitwise Operations";
 			sourceTree = "<group>";
 		};
-		DFC943811D742A9500F2BCEF /* CryptoKitTests */ = {
+		DFC943811D742A9500F2BCEF /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				DFC943821D742A9500F2BCEF /* MD5Tests.swift */,
@@ -141,14 +141,14 @@
 				DFC9438B1D742CAB00F2BCEF /* Data+HexString.swift */,
 				DFC943841D742A9500F2BCEF /* Info.plist */,
 			);
-			path = CryptoKitTests;
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		DFD16A301D72E62C00ACDBC8 = {
 			isa = PBXGroup;
 			children = (
 				DFD16A5F1D72E73300ACDBC8 /* Sources */,
-				DFC943811D742A9500F2BCEF /* CryptoKitTests */,
+				DFC943811D742A9500F2BCEF /* Tests */,
 				DFD16A3D1D72E67200ACDBC8 /* Products */,
 			);
 			sourceTree = "<group>";
