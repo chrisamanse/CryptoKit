@@ -3,9 +3,13 @@ xcode_workspace: CryptoKit.xcworkspace
 osx_image: xcode8
 
 env:
-  - SCHEME="CryptoKit macOS" SDK="macosx10.12"
-  - SCHEME="CryptoKit iOS" SDK="iphonesimulator10.0"
-  - SCHEME="CryptoKit watchOS" SDK="watchos3.0"
+  - DESTINATION="arch=x86_64"                    SCHEME="CryptoKit macOS" SDK="macosx10.12"         RUN_TESTS="YES"
+  - DESTINATION="OS=10.0,name=iPhone SE"         SCHEME="CryptoKit iOS"   SDK="iphonesimulator10.0" RUN_TESTS="YES"
+  - DESTINATION="OS=3.0,name=Apple Watch - 42mm" SCHEME="CryptoKit watchOS" SDK="watchos3.0"        RUN_TESTS="NO"
 
 script:
-  - xcodebuild -project CryptoKit.xcodeproj -scheme "$SCHEME" -sdk "$SDK" test | xcpretty -c
+  - if [ $RUN_TESTS == "YES" ]; then
+      xcodebuild -project CryptoKit.xcodeproj -scheme "$SCHEME" -sdk "$SDK" -destination "$DESTINATION" -configuration Debug ONLY_ACTIVE_ARCH=NO ENABLE_TESTABILITY=YES test | xcpretty -c;
+    else
+      xcodebuild -project CryptoKit.xcodeproj -scheme "$SCHEME" -sdk "$SDK" -destination "$DESTINATION" -configuration Debug ONLY_ACTIVE_ARCH=NO build | xcpretty -c;
+    fi
