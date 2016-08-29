@@ -61,6 +61,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DF658B1E1D7409310026FCBA /* Digests */ = {
+			isa = PBXGroup;
+			children = (
+				DFD16A661D72EE7D00ACDBC8 /* MD5.swift */,
+				DF236CDF1D73F45F00EFF79B /* SHA1.swift */,
+			);
+			path = Digests;
+			sourceTree = "<group>";
+		};
 		DF74E9AD1D73DE6200B8D700 /* Data Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -98,8 +107,7 @@
 		DFD16A5F1D72E73300ACDBC8 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				DFD16A661D72EE7D00ACDBC8 /* MD5.swift */,
-				DF236CDF1D73F45F00EFF79B /* SHA1.swift */,
+				DF658B1E1D7409310026FCBA /* Digests */,
 				DF74E9AD1D73DE6200B8D700 /* Data Extensions */,
 				DF74E9AE1D73DE7000B8D700 /* Bitwise Operations */,
 				DFD16A651D72EA3700ACDBC8 /* Supporting Files */,
