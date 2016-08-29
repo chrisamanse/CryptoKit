@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF1521FE1D7449290068726D /* SHA1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1521FD1D7449290068726D /* SHA1Tests.swift */; };
 		DF236CE01D73F45F00EFF79B /* SHA1.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF236CDF1D73F45F00EFF79B /* SHA1.swift */; };
 		DF236CE11D73F45F00EFF79B /* SHA1.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF236CDF1D73F45F00EFF79B /* SHA1.swift */; };
 		DF236CE21D73F45F00EFF79B /* SHA1.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF236CDF1D73F45F00EFF79B /* SHA1.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DF1521FD1D7449290068726D /* SHA1Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHA1Tests.swift; sourceTree = "<group>"; };
 		DF236CDF1D73F45F00EFF79B /* SHA1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHA1.swift; sourceTree = "<group>"; };
 		DF8E681E1D74300B00EA7657 /* Digest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Digest.swift; sourceTree = "<group>"; };
 		DFB193961D743C2800563B09 /* Data+Digest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Digest.swift"; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				DFC943821D742A9500F2BCEF /* MD5Tests.swift */,
+				DF1521FD1D7449290068726D /* SHA1Tests.swift */,
 				DFC9438B1D742CAB00F2BCEF /* Data+HexString.swift */,
 				DFC943841D742A9500F2BCEF /* Info.plist */,
 			);
@@ -361,6 +364,7 @@
 			files = (
 				DFC9438C1D742CAB00F2BCEF /* Data+HexString.swift in Sources */,
 				DFC943831D742A9500F2BCEF /* MD5Tests.swift in Sources */,
+				DF1521FE1D7449290068726D /* SHA1Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
