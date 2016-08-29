@@ -52,10 +52,10 @@ public struct MD5 {
             }
             
             // Initiaize hash value for this chunk
-            var A: UInt32 = a0
-            var B: UInt32 = b0
-            var C: UInt32 = c0
-            var D: UInt32 = d0
+            var A = a0
+            var B = b0
+            var C = c0
+            var D = d0
             
             // Main loop
             for i in 0..<64 {
