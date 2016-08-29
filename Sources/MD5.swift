@@ -46,7 +46,7 @@ public struct MD5 {
             
             // Divide chunk into 32-bit words (512 is divisible by 32, thus all words are 32 bits)
             // Since 512 is divisible by 32, simply create array by converting the Data pointer to a UInt32 array pointer
-            let M: [UInt32] = chunk.withUnsafeBytes { (ptr: UnsafePointer<UInt32>) -> [UInt32] in
+            let M = chunk.withUnsafeBytes { (ptr: UnsafePointer<UInt32>) -> [UInt32] in
                 // 512 / 32 = 16 words
                 return Array(UnsafeBufferPointer(start: ptr, count: 16))
             }
