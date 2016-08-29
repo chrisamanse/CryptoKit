@@ -10,6 +10,15 @@
 		DFD16A621D72E77300ACDBC8 /* CryptoKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DFD16A601D72E73300ACDBC8 /* CryptoKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DFD16A631D72E77400ACDBC8 /* CryptoKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DFD16A601D72E73300ACDBC8 /* CryptoKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DFD16A641D72E77400ACDBC8 /* CryptoKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DFD16A601D72E73300ACDBC8 /* CryptoKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DFD16A671D72EE7D00ACDBC8 /* MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD16A661D72EE7D00ACDBC8 /* MD5.swift */; };
+		DFD16A681D72EE7D00ACDBC8 /* MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD16A661D72EE7D00ACDBC8 /* MD5.swift */; };
+		DFD16A691D72EE7D00ACDBC8 /* MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD16A661D72EE7D00ACDBC8 /* MD5.swift */; };
+		DFDEB6271D7348C300FEE448 /* Data+Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDEB6261D7348C300FEE448 /* Data+Int.swift */; };
+		DFDEB6281D7348C300FEE448 /* Data+Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDEB6261D7348C300FEE448 /* Data+Int.swift */; };
+		DFDEB6291D7348C300FEE448 /* Data+Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDEB6261D7348C300FEE448 /* Data+Int.swift */; };
+		DFDEB62B1D7350C100FEE448 /* BitwiseRotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDEB62A1D7350C100FEE448 /* BitwiseRotate.swift */; };
+		DFDEB62C1D7350C100FEE448 /* BitwiseRotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDEB62A1D7350C100FEE448 /* BitwiseRotate.swift */; };
+		DFDEB62D1D7350C100FEE448 /* BitwiseRotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDEB62A1D7350C100FEE448 /* BitwiseRotate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +27,9 @@
 		DFD16A571D72E6B400ACDBC8 /* CryptoKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CryptoKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFD16A601D72E73300ACDBC8 /* CryptoKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CryptoKit.h; sourceTree = "<group>"; };
 		DFD16A611D72E73300ACDBC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFD16A661D72EE7D00ACDBC8 /* MD5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MD5.swift; sourceTree = "<group>"; };
+		DFDEB6261D7348C300FEE448 /* Data+Int.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Int.swift"; sourceTree = "<group>"; };
+		DFDEB62A1D7350C100FEE448 /* BitwiseRotate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitwiseRotate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +57,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DF74E9AD1D73DE6200B8D700 /* Data Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DFDEB6261D7348C300FEE448 /* Data+Int.swift */,
+			);
+			path = "Data Extensions";
+			sourceTree = "<group>";
+		};
+		DF74E9AE1D73DE7000B8D700 /* Bitwise Operations */ = {
+			isa = PBXGroup;
+			children = (
+				DFDEB62A1D7350C100FEE448 /* BitwiseRotate.swift */,
+			);
+			path = "Bitwise Operations";
+			sourceTree = "<group>";
+		};
 		DFD16A301D72E62C00ACDBC8 = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +94,9 @@
 		DFD16A5F1D72E73300ACDBC8 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				DFD16A661D72EE7D00ACDBC8 /* MD5.swift */,
+				DF74E9AD1D73DE6200B8D700 /* Data Extensions */,
+				DF74E9AE1D73DE7000B8D700 /* Bitwise Operations */,
 				DFD16A651D72EA3700ACDBC8 /* Supporting Files */,
 			);
 			path = Sources;
@@ -174,14 +205,17 @@
 				TargetAttributes = {
 					DFD16A3B1D72E67200ACDBC8 = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					DFD16A491D72E68400ACDBC8 = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					DFD16A561D72E6B400ACDBC8 = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -234,6 +268,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFD16A671D72EE7D00ACDBC8 /* MD5.swift in Sources */,
+				DFDEB62B1D7350C100FEE448 /* BitwiseRotate.swift in Sources */,
+				DFDEB6271D7348C300FEE448 /* Data+Int.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +278,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFD16A681D72EE7D00ACDBC8 /* MD5.swift in Sources */,
+				DFDEB62C1D7350C100FEE448 /* BitwiseRotate.swift in Sources */,
+				DFDEB6281D7348C300FEE448 /* Data+Int.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +288,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFD16A691D72EE7D00ACDBC8 /* MD5.swift in Sources */,
+				DFDEB62D1D7350C100FEE448 /* BitwiseRotate.swift in Sources */,
+				DFDEB6291D7348C300FEE448 /* Data+Int.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
