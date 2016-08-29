@@ -1,6 +1,6 @@
-# CryptoKit
+# CryptoKit 🔑
 
-Implementation of cryptographic functions in Swift
+A Swift framework containing implementations of cryptographic functions.
 
 # License
 
