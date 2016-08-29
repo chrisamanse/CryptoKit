@@ -11,25 +11,7 @@ import Foundation
 public struct SHA1 {
     public static func generateDigest(of message: Data) -> Data {
         // Create mutable copy of message
-        var messageCopy = message
-        
-        // Append 1-bit and zeros until length of messageCopy in bits = 448 (mod 512)
-        // 448 bits = 56 bytes, 512 bits = 64 bytes
-        messageCopy.append(0x80)
-        
-        // Compute padded zeros count
-        var paddedZerosCount = messageCopy.count % 64
-        if paddedZerosCount <= 56 {
-            paddedZerosCount = 56 - paddedZerosCount
-        } else {
-            paddedZerosCount = 64 - paddedZerosCount + 56
-        }
-        
-        // Append zeros
-        messageCopy.append(contentsOf: Array(repeating: UInt8(0x00), count: paddedZerosCount))
-        
-        // Append origin length in bits as 8-byte big-endian Data
-        messageCopy.append(Data(from: (UInt64(message.count) * 8).bigEndian))
+        let messageCopy = Digest.preprocess(message: message, forLength: 64, in: .bigEndian)
         
         // Initialize variables
         var a0: UInt32 = 0x67452301
@@ -37,7 +19,6 @@ public struct SHA1 {
         var c0: UInt32 = 0x98badcfe
         var d0: UInt32 = 0x10325476
         var e0: UInt32 = 0xC3D2E1F0
-        
         
         // Divide into 512-bit (64-byte) chunks
         // Since data length is 0 bytes (mod 64), all chunks are 64 bytes
