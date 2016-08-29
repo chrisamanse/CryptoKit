@@ -26,15 +26,16 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      codeCoverageEnabled = "YES">
       <Testables>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DFC9437F1D742A9500F2BCEF"
-               BuildableName = "CryptoKitTests.xctest"
-               BlueprintName = "CryptoKitTests"
+               BuildableName = "CryptoKit macOS Tests.xctest"
+               BlueprintName = "CryptoKit macOS Tests"
                ReferencedContainer = "container:CryptoKit.xcodeproj">
             </BuildableReference>
          </TestableReference>
