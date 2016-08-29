@@ -64,7 +64,7 @@ public struct MD5 {
                 
                 // Calculate F and g depending on round
                 let F: UInt32
-                var g: Int
+                let g: Int
                 
                 switch round {
                 case 0:
