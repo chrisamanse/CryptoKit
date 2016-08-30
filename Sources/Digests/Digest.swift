@@ -8,9 +8,9 @@
 
 import Foundation
 
-public struct Digest {
+public enum Digest {
     public struct Algorithm {
-        public var digestFunction: (Data) -> Data
+        fileprivate let digestFunction: (Data) -> Data
         
         public init(digestFunction: @escaping (Data) -> Data) {
             self.digestFunction = digestFunction
@@ -20,6 +20,8 @@ public struct Digest {
     public static func generate(from message: Data, using algorithm: Digest.Algorithm) -> Data {
         return algorithm.digestFunction(message)
     }
-    
-    private init() {}
+}
+
+public protocol DigestCapable {
+    static func generateDigest(of message: Data) -> Data
 }
