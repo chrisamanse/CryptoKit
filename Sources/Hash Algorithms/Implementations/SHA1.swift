@@ -9,9 +9,13 @@
 import Foundation
 
 public struct SHA1: HashAlgorithm, HashPreprocessor {
+    public static var endianess: Endianess {
+        return .bigEndian
+    }
+    
     public static func digest(_ message: Data) -> Data {
         // Create mutable copy of message
-        let messageCopy = self.preprocess(message: message, length: 64, endianess: .bigEndian)
+        let messageCopy = self.preprocess(message: message)
         
         // Initialize variables
         var a0: UInt32 = 0x67452301

@@ -9,9 +9,13 @@
 import Foundation
 
 public struct SHA256: HashAlgorithm, HashPreprocessor {
+    public static var endianess: Endianess {
+        return .bigEndian
+    }
+    
     public static func digest(_ message: Data) -> Data {
         // Get padded message
-        let paddedMessage = self.preprocess(message: message, length: 64, endianess: .bigEndian)
+        let paddedMessage = self.preprocess(message: message)
         
         // Initialize hash values
         var h: [UInt32] = [
