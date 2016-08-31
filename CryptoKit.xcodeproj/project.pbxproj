@@ -28,6 +28,15 @@
 		DF8AC1B41D7686B10042C68A /* Data+HashFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8AC1B31D7686B10042C68A /* Data+HashFunctions.swift */; };
 		DF8AC1B51D7686B10042C68A /* Data+HashFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8AC1B31D7686B10042C68A /* Data+HashFunctions.swift */; };
 		DF8AC1B61D7686B10042C68A /* Data+HashFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8AC1B31D7686B10042C68A /* Data+HashFunctions.swift */; };
+		DF9E5F781D77127F0048F90E /* ExpressibleByInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9E5F771D77127F0048F90E /* ExpressibleByInt.swift */; };
+		DF9E5F791D77127F0048F90E /* ExpressibleByInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9E5F771D77127F0048F90E /* ExpressibleByInt.swift */; };
+		DF9E5F7A1D77127F0048F90E /* ExpressibleByInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9E5F771D77127F0048F90E /* ExpressibleByInt.swift */; };
+		DF9E5F7C1D7713570048F90E /* ShiftOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9E5F7B1D7713570048F90E /* ShiftOperations.swift */; };
+		DF9E5F7D1D7713570048F90E /* ShiftOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9E5F7B1D7713570048F90E /* ShiftOperations.swift */; };
+		DF9E5F7E1D7713570048F90E /* ShiftOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9E5F7B1D7713570048F90E /* ShiftOperations.swift */; };
+		DF9E5F801D7713B50048F90E /* RotateOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9E5F7F1D7713B50048F90E /* RotateOperations.swift */; };
+		DF9E5F811D7713B50048F90E /* RotateOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9E5F7F1D7713B50048F90E /* RotateOperations.swift */; };
+		DF9E5F821D7713B50048F90E /* RotateOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9E5F7F1D7713B50048F90E /* RotateOperations.swift */; };
 		DFA61E7B1D74701100766CFB /* CryptoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFD16A4A1D72E68400ACDBC8 /* CryptoKit.framework */; };
 		DFA61E821D74713300766CFB /* MD5Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC943821D742A9500F2BCEF /* MD5Tests.swift */; };
 		DFA61E831D74713300766CFB /* SHA1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1521FD1D7449290068726D /* SHA1Tests.swift */; };
@@ -75,6 +84,9 @@
 		DF8AC1AB1D76839C0042C68A /* HashAlgorithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HashAlgorithm.swift; sourceTree = "<group>"; };
 		DF8AC1AF1D7683CB0042C68A /* Data+HashFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+HashFunction.swift"; sourceTree = "<group>"; };
 		DF8AC1B31D7686B10042C68A /* Data+HashFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+HashFunctions.swift"; sourceTree = "<group>"; };
+		DF9E5F771D77127F0048F90E /* ExpressibleByInt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpressibleByInt.swift; sourceTree = "<group>"; };
+		DF9E5F7B1D7713570048F90E /* ShiftOperations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShiftOperations.swift; sourceTree = "<group>"; };
+		DF9E5F7F1D7713B50048F90E /* RotateOperations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RotateOperations.swift; sourceTree = "<group>"; };
 		DFA61E761D74701100766CFB /* CryptoKit iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CryptoKit iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFC943801D742A9500F2BCEF /* CryptoKit macOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CryptoKit macOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFC943821D742A9500F2BCEF /* MD5Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MD5Tests.swift; sourceTree = "<group>"; };
@@ -169,6 +181,16 @@
 			path = Implementations;
 			sourceTree = "<group>";
 		};
+		DF9E5F761D77111E0048F90E /* Math Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				DF9E5F771D77127F0048F90E /* ExpressibleByInt.swift */,
+				DF9E5F7B1D7713570048F90E /* ShiftOperations.swift */,
+				DF9E5F7F1D7713B50048F90E /* RotateOperations.swift */,
+			);
+			path = "Math Protocols";
+			sourceTree = "<group>";
+		};
 		DFC943811D742A9500F2BCEF /* Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -207,6 +229,7 @@
 			children = (
 				DF658B1E1D7409310026FCBA /* Hash Algorithms */,
 				DF74E9AD1D73DE6200B8D700 /* Data Extensions */,
+				DF9E5F761D77111E0048F90E /* Math Protocols */,
 				DF74E9AE1D73DE7000B8D700 /* Bitwise Operations */,
 				DFD16A651D72EA3700ACDBC8 /* Supporting Files */,
 			);
@@ -462,12 +485,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF9E5F7C1D7713570048F90E /* ShiftOperations.swift in Sources */,
+				DF9E5F781D77127F0048F90E /* ExpressibleByInt.swift in Sources */,
 				DF8AC1AC1D76839C0042C68A /* HashAlgorithm.swift in Sources */,
 				DFD16A671D72EE7D00ACDBC8 /* MD5.swift in Sources */,
 				DF8AC1B01D7683CB0042C68A /* Data+HashFunction.swift in Sources */,
 				DFDEB62B1D7350C100FEE448 /* BitwiseRotate.swift in Sources */,
 				DF8AC1B41D7686B10042C68A /* Data+HashFunctions.swift in Sources */,
 				DF7854841D7692F8004C506E /* SHA256.swift in Sources */,
+				DF9E5F801D7713B50048F90E /* RotateOperations.swift in Sources */,
 				DF236CE01D73F45F00EFF79B /* SHA1.swift in Sources */,
 				DFDEB6271D7348C300FEE448 /* Data+Int.swift in Sources */,
 				DF30F3711D768B9F00253128 /* HashPreprocessor.swift in Sources */,
@@ -478,12 +504,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF9E5F7D1D7713570048F90E /* ShiftOperations.swift in Sources */,
+				DF9E5F791D77127F0048F90E /* ExpressibleByInt.swift in Sources */,
 				DF8AC1AD1D76839C0042C68A /* HashAlgorithm.swift in Sources */,
 				DFD16A681D72EE7D00ACDBC8 /* MD5.swift in Sources */,
 				DF8AC1B11D7683CB0042C68A /* Data+HashFunction.swift in Sources */,
 				DFDEB62C1D7350C100FEE448 /* BitwiseRotate.swift in Sources */,
 				DF8AC1B51D7686B10042C68A /* Data+HashFunctions.swift in Sources */,
 				DF7854851D7692F8004C506E /* SHA256.swift in Sources */,
+				DF9E5F811D7713B50048F90E /* RotateOperations.swift in Sources */,
 				DF236CE11D73F45F00EFF79B /* SHA1.swift in Sources */,
 				DFDEB6281D7348C300FEE448 /* Data+Int.swift in Sources */,
 				DF30F3721D768B9F00253128 /* HashPreprocessor.swift in Sources */,
@@ -494,12 +523,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF9E5F7E1D7713570048F90E /* ShiftOperations.swift in Sources */,
+				DF9E5F7A1D77127F0048F90E /* ExpressibleByInt.swift in Sources */,
 				DF8AC1AE1D76839C0042C68A /* HashAlgorithm.swift in Sources */,
 				DFD16A691D72EE7D00ACDBC8 /* MD5.swift in Sources */,
 				DF8AC1B21D7683CB0042C68A /* Data+HashFunction.swift in Sources */,
 				DFDEB62D1D7350C100FEE448 /* BitwiseRotate.swift in Sources */,
 				DF8AC1B61D7686B10042C68A /* Data+HashFunctions.swift in Sources */,
 				DF7854861D7692F8004C506E /* SHA256.swift in Sources */,
+				DF9E5F821D7713B50048F90E /* RotateOperations.swift in Sources */,
 				DF236CE21D73F45F00EFF79B /* SHA1.swift in Sources */,
 				DFDEB6291D7348C300FEE448 /* Data+Int.swift in Sources */,
 				DF30F3731D768B9F00253128 /* HashPreprocessor.swift in Sources */,
