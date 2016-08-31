@@ -1,20 +1,24 @@
 //
-//  Digest+Common.swift
+//  HashPreprocessor.swift
 //  CryptoKit
 //
-//  Created by Chris Amanse on 29/08/2016.
+//  Created by Chris Amanse on 31/08/2016.
 //
 //
 
 import Foundation
 
-public extension Digest {
-    public enum Endianess {
-        case bigEndian
-        case littleEndian
-    }
-    
-    public static func preprocess(message: Data, forLength length: Int, in endianess: Endianess) -> Data {
+public enum Endianess {
+    case bigEndian
+    case littleEndian
+}
+
+public protocol HashPreprocessor {
+    static func preprocess(message: Data, length: Int, endianess: Endianess) -> Data
+}
+
+public extension HashPreprocessor {
+    public static func preprocess(message: Data, length: Int, endianess: Endianess = .littleEndian) -> Data {
         // Create mutable copy of message
         var messageCopy = message
         

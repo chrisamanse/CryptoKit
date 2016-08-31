@@ -8,10 +8,10 @@
 
 import Foundation
 
-public struct MD5 {
-    public static func generateDigest(of message: Data) -> Data {
+public struct MD5: HashAlgorithm, HashPreprocessor {
+    public static func digest(_ message: Data) -> Data {
         // Create mutable copy of message
-        let messageCopy = Digest.preprocess(message: message, forLength: 64, in: .littleEndian)
+        let messageCopy = self.preprocess(message: message, length: 64, endianess: .littleEndian)
         
         // Initialize variables
         var a0: UInt32 = 0x67452301
