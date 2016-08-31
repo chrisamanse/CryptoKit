@@ -14,11 +14,11 @@ public enum Endianess {
 }
 
 public protocol HashPreprocessor {
-    static func preprocess(message: Data, length: Int, endianess: Endianess) -> Data
+    static func preprocess(message: Data, length: UInt, endianess: Endianess) -> Data
 }
 
 public extension HashPreprocessor {
-    public static func preprocess(message: Data, length: Int, endianess: Endianess = .littleEndian) -> Data {
+    public static func preprocess(message: Data, length: UInt, endianess: Endianess = .littleEndian) -> Data {
         // Create mutable copy of message
         var messageCopy = message
         
@@ -27,13 +27,13 @@ public extension HashPreprocessor {
         messageCopy.append(0x80)
         
         // Compute padded zeros count
-        var paddedZerosCount = messageCopy.count % length
+        var paddedZerosCount = messageCopy.count % Int(length)
         
-        let target = length - 8 // 8-bytes for length
+        let target = Int(length) - 8 // 8-bytes for length
         if paddedZerosCount <= 56 {
             paddedZerosCount = target - paddedZerosCount
         } else {
-            paddedZerosCount = length - paddedZerosCount + target
+            paddedZerosCount = Int(length) - paddedZerosCount + target
         }
         
         // Append zeros
