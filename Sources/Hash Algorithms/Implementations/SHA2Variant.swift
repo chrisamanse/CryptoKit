@@ -15,6 +15,12 @@ public protocol SHA2Variant: HashAlgorithm, HashPreprocessor {
     static var kConstants: [BaseUnit] { get }
     static var initialHashValues: [BaseUnit] { get }
     
+    static var s0ShiftAndRotateAmounts: (BaseUnit, BaseUnit, BaseUnit) { get }
+    static var s1ShiftAndRotateAmounts: (BaseUnit, BaseUnit, BaseUnit) { get }
+    
+    static var S0ShiftAndRotateAmounts: (BaseUnit, BaseUnit, BaseUnit) { get }
+    static var S1ShiftAndRotateAmounts: (BaseUnit, BaseUnit, BaseUnit) { get }
+    
     static func combine(hashValues: [BaseUnit]) -> Data
     
     static func generateHashValues(from message: Data) -> [BaseUnit]
@@ -41,6 +47,19 @@ public extension SHA2Variant {
         ]
     }
     
+    public static var s0ShiftAndRotateAmounts: (BaseUnit, BaseUnit, BaseUnit) {
+        return (7, 18, 3)
+    }
+    public static var s1ShiftAndRotateAmounts: (BaseUnit, BaseUnit, BaseUnit) {
+        return (17, 19, 10)
+    }
+    
+    public static var S0ShiftAndRotateAmounts: (BaseUnit, BaseUnit, BaseUnit) {
+        return (6, 11, 25)
+    }
+    public static var S1ShiftAndRotateAmounts: (BaseUnit, BaseUnit, BaseUnit) {
+        return (2, 13, 22)
+    }
     
     public static func generateHashValues(from message: Data) -> [BaseUnit] {
         let paddedMessage = self.preprocess(message: message)
@@ -48,6 +67,12 @@ public extension SHA2Variant {
         // Constants
         let k = self.kConstants
         var h = self.initialHashValues
+        
+        // Rotate amounts
+        let s0Amounts = self.s0ShiftAndRotateAmounts
+        let s1Amounts = self.s1ShiftAndRotateAmounts
+        let S0Amounts = self.S0ShiftAndRotateAmounts
+        let S1Amounts = self.S1ShiftAndRotateAmounts
         
         // Divide into 512-bit (64-byte) chunks
         // Since data length is 0 bytes (mod 64), all chunks are 64 bytes
@@ -69,10 +94,10 @@ public extension SHA2Variant {
             // Extend 16 words to 64 words
             for i in 16..<64 {
                 let w15 = w[i-15]
-                let s0 = (w15 >>> 7) ^ (w15 >>> 18) ^ (w15 >> 3)
+                let s0 = (w15 >>> s0Amounts.0) ^ (w15 >>> s0Amounts.1) ^ (w15 >> s0Amounts.2)
                 
                 let w2 = w[i-2]
-                let s1 = (w2 >>> 17) ^ (w2 >>> 19) ^ (w2 >> 10)
+                let s1 = (w2 >>> s1Amounts.0) ^ (w2 >>> s1Amounts.1) ^ (w2 >> s1Amounts.2)
                 
                 w.append(w[i-16] &+ s0 &+ w[i-7] &+ s1)
             }
@@ -81,10 +106,10 @@ public extension SHA2Variant {
             var (A, B, C, D, E, F, G, H) = (h[0], h[1], h[2], h[3], h[4], h[5], h[6], h[7])
             
             for i in 0..<64 {
-                let S1 = (E >>> 6) ^ (E >>> 11) ^ (E >>> 25)
+                let S1 = (E >>> S0Amounts.0) ^ (E >>> S0Amounts.1) ^ (E >>> S0Amounts.2)
                 let ch = (E & F) ^ ((~E) & G)
                 let temp1 = H &+ S1 &+ ch &+ k[i] &+ w[i]
-                let S0 = (A >>> 2) ^ (A >>> 13) ^ (A >>> 22)
+                let S0 = (A >>> S1Amounts.0) ^ (A >>> S1Amounts.1) ^ (A >>> S1Amounts.2)
                 let maj = (A & B) ^ (A & C) ^ (B & C)
                 let temp2 = S0 &+ maj
                 
