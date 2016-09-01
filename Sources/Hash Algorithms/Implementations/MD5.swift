@@ -67,7 +67,7 @@ public struct MD5: HashAlgorithm, HashPreprocessor {
                 }
                 
                 // Swap values
-                let newB = B &+ (A &+ F &+ K(i) &+ M[g]).rotateLeft(by: s(i))
+                let newB = B &+ ((A &+ F &+ K(i) &+ M[g])) <<< s(i)
                 (D, C, B, A) = (C, B, newB, D)
             }
             

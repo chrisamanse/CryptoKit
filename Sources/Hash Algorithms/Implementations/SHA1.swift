@@ -42,7 +42,7 @@ public struct SHA1: HashAlgorithm, HashPreprocessor {
             
             // Extend 16 words to 80 words
             for i in 16..<80 {
-                w.append((w[i-3] ^ w[i-8] ^ w[i-14] ^ w[i-16]).rotateLeft(by: 1))
+                w.append((w[i-3] ^ w[i-8] ^ w[i-14] ^ w[i-16]) <<< 1)
             }
             
             // Initialize hash value for this chunk
@@ -77,10 +77,10 @@ public struct SHA1: HashAlgorithm, HashPreprocessor {
                     k = 0
                 }
                 
-                let temp = A.rotateLeft(by: 5) &+ F &+ E &+ k &+ w[i]
+                let temp = (A <<< 5) &+ F &+ E &+ k &+ w[i]
                 E = D
                 D = C
-                C = B.rotateLeft(by: 30)
+                C = (B <<< 30)
                 B = A
                 A = temp
             }

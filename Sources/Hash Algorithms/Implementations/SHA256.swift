@@ -43,8 +43,8 @@ public struct SHA256: HashAlgorithm, HashPreprocessor {
             
             // Extend 16 words to 64 words
             for i in 16..<64 {
-                let s0 = w[i-15].rotateRight(by: 7) ^ w[i-15].rotateRight(by: 18) ^ (w[i-15] >> 3)
-                let s1 = w[i-2].rotateRight(by: 17) ^ w[i-2].rotateRight(by: 19) ^ (w[i-2] >> 10)
+                let s0 = (w[i-15] >>> 7) ^ (w[i-15] >>> 18) ^ (w[i-15] >> 3)
+                let s1 = (w[i-2] >>> 17) ^ (w[i-2] >>> 19) ^ (w[i-2] >> 10)
                 
                 w.append(w[i-16] &+ s0 &+ w[i-7] &+ s1)
             }
@@ -53,10 +53,10 @@ public struct SHA256: HashAlgorithm, HashPreprocessor {
             var (A, B, C, D, E, F, G, H) = (h[0], h[1], h[2], h[3], h[4], h[5], h[6], h[7])
             
             for i in 0..<64 {
-                let S1 = E.rotateRight(by: 6) ^ E.rotateRight(by: 11) ^ E.rotateRight(by: 25)
+                let S1 = (E >>> 6) ^ (E >>> 11) ^ (E >>> 25)
                 let ch = (E & F) ^ ((~E) & G)
                 let temp1 = H &+ S1 &+ ch &+ k[i] &+ w[i]
-                let S0 = A.rotateRight(by: 2) ^ A.rotateRight(by: 13) ^ A.rotateRight(by: 22)
+                let S0 = (A >>> 2) ^ (A >>> 13) ^ (A >>> 22)
                 let maj = (A & B) ^ (A & C) ^ (B & C)
                 let temp2 = S0 &+ maj
                 
