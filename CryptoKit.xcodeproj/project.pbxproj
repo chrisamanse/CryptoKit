@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF0619AE1D78155500269CFC /* SHA512.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0619AD1D78155500269CFC /* SHA512.swift */; };
+		DF0619AF1D78155500269CFC /* SHA512.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0619AD1D78155500269CFC /* SHA512.swift */; };
+		DF0619B01D78155500269CFC /* SHA512.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0619AD1D78155500269CFC /* SHA512.swift */; };
 		DF1521FE1D7449290068726D /* SHA1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1521FD1D7449290068726D /* SHA1Tests.swift */; };
 		DF236CE01D73F45F00EFF79B /* SHA1.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF236CDF1D73F45F00EFF79B /* SHA1.swift */; };
 		DF236CE11D73F45F00EFF79B /* SHA1.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF236CDF1D73F45F00EFF79B /* SHA1.swift */; };
@@ -84,6 +87,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DF0619AD1D78155500269CFC /* SHA512.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHA512.swift; sourceTree = "<group>"; };
 		DF1521FD1D7449290068726D /* SHA1Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHA1Tests.swift; sourceTree = "<group>"; };
 		DF236CDF1D73F45F00EFF79B /* SHA1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHA1.swift; sourceTree = "<group>"; };
 		DF30F3701D768B9F00253128 /* HashPreprocessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HashPreprocessor.swift; sourceTree = "<group>"; };
@@ -182,6 +186,7 @@
 				DFBD2DE61D77D39500159A96 /* SHA2Variant.swift */,
 				DFFA34521D77E80400DC0204 /* SHA224.swift */,
 				DF7854831D7692F8004C506E /* SHA256.swift */,
+				DF0619AD1D78155500269CFC /* SHA512.swift */,
 			);
 			path = Implementations;
 			sourceTree = "<group>";
@@ -502,6 +507,7 @@
 				DFD79BC81D77DC07006B82DC /* EndianRepresentable.swift in Sources */,
 				DF7854841D7692F8004C506E /* SHA256.swift in Sources */,
 				DF9E5F801D7713B50048F90E /* RotateOperations.swift in Sources */,
+				DF0619AE1D78155500269CFC /* SHA512.swift in Sources */,
 				DFFA34531D77E80400DC0204 /* SHA224.swift in Sources */,
 				DF236CE01D73F45F00EFF79B /* SHA1.swift in Sources */,
 				DFDEB6271D7348C300FEE448 /* Data+Int.swift in Sources */,
@@ -523,6 +529,7 @@
 				DFD79BC91D77DC07006B82DC /* EndianRepresentable.swift in Sources */,
 				DF7854851D7692F8004C506E /* SHA256.swift in Sources */,
 				DF9E5F811D7713B50048F90E /* RotateOperations.swift in Sources */,
+				DF0619AF1D78155500269CFC /* SHA512.swift in Sources */,
 				DFFA34541D77E80400DC0204 /* SHA224.swift in Sources */,
 				DF236CE11D73F45F00EFF79B /* SHA1.swift in Sources */,
 				DFDEB6281D7348C300FEE448 /* Data+Int.swift in Sources */,
@@ -544,6 +551,7 @@
 				DFD79BCA1D77DC07006B82DC /* EndianRepresentable.swift in Sources */,
 				DF7854861D7692F8004C506E /* SHA256.swift in Sources */,
 				DF9E5F821D7713B50048F90E /* RotateOperations.swift in Sources */,
+				DF0619B01D78155500269CFC /* SHA512.swift in Sources */,
 				DFFA34551D77E80400DC0204 /* SHA224.swift in Sources */,
 				DF236CE21D73F45F00EFF79B /* SHA1.swift in Sources */,
 				DFDEB6291D7348C300FEE448 /* Data+Int.swift in Sources */,
