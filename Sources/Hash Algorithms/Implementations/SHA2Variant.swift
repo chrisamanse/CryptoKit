@@ -55,10 +55,10 @@ public extension SHA2Variant {
     }
     
     public static var S0ShiftAndRotateAmounts: (BaseUnit, BaseUnit, BaseUnit) {
-        return (6, 11, 25)
+        return (2, 13, 22)
     }
     public static var S1ShiftAndRotateAmounts: (BaseUnit, BaseUnit, BaseUnit) {
-        return (2, 13, 22)
+        return (6, 11, 25)
     }
     
     public static func generateHashValues(from message: Data) -> [BaseUnit] {
@@ -106,10 +106,10 @@ public extension SHA2Variant {
             var (A, B, C, D, E, F, G, H) = (h[0], h[1], h[2], h[3], h[4], h[5], h[6], h[7])
             
             for i in 0..<64 {
-                let S1 = (E >>> S0Amounts.0) ^ (E >>> S0Amounts.1) ^ (E >>> S0Amounts.2)
+                let S1 = (E >>> S1Amounts.0) ^ (E >>> S1Amounts.1) ^ (E >>> S1Amounts.2)
                 let ch = (E & F) ^ ((~E) & G)
                 let temp1 = H &+ S1 &+ ch &+ k[i] &+ w[i]
-                let S0 = (A >>> S1Amounts.0) ^ (A >>> S1Amounts.1) ^ (A >>> S1Amounts.2)
+                let S0 = (A >>> S0Amounts.0) ^ (A >>> S0Amounts.1) ^ (A >>> S0Amounts.2)
                 let maj = (A & B) ^ (A & C) ^ (B & C)
                 let temp2 = S0 &+ maj
                 
@@ -119,6 +119,7 @@ public extension SHA2Variant {
             
             // Add current chunk's hash to result (allow overflow)
             let currentHash = [A, B, C, D, E, F, G, H]
+            
             for i in 0..<h.count {
                 h[i] = h[i] &+ currentHash[i]
             }
