@@ -42,7 +42,7 @@ public extension HashPreprocessor {
         var paddedZerosCount = messageCopy.count % length
         
         let target = length - 8 // 8-bytes for length
-        if paddedZerosCount <= 56 {
+        if paddedZerosCount <= target {
             paddedZerosCount = target - paddedZerosCount
         } else {
             paddedZerosCount = length - paddedZerosCount + target
