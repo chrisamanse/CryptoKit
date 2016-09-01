@@ -17,6 +17,10 @@ public extension Data.HashFunction {
         return SHA1.hashFunction
     }
     
+    public static var sha224: Data.HashFunction {
+        return SHA224.hashFunction
+    }
+    
     public static var sha256: Data.HashFunction {
         return SHA256.hashFunction
     }
