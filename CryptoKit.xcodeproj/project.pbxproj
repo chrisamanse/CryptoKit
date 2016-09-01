@@ -50,6 +50,9 @@
 		DFD16A671D72EE7D00ACDBC8 /* MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD16A661D72EE7D00ACDBC8 /* MD5.swift */; };
 		DFD16A681D72EE7D00ACDBC8 /* MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD16A661D72EE7D00ACDBC8 /* MD5.swift */; };
 		DFD16A691D72EE7D00ACDBC8 /* MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD16A661D72EE7D00ACDBC8 /* MD5.swift */; };
+		DFD79BC81D77DC07006B82DC /* EndianRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD79BC71D77DC07006B82DC /* EndianRepresentable.swift */; };
+		DFD79BC91D77DC07006B82DC /* EndianRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD79BC71D77DC07006B82DC /* EndianRepresentable.swift */; };
+		DFD79BCA1D77DC07006B82DC /* EndianRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD79BC71D77DC07006B82DC /* EndianRepresentable.swift */; };
 		DFDEB6271D7348C300FEE448 /* Data+Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDEB6261D7348C300FEE448 /* Data+Int.swift */; };
 		DFDEB6281D7348C300FEE448 /* Data+Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDEB6261D7348C300FEE448 /* Data+Int.swift */; };
 		DFDEB6291D7348C300FEE448 /* Data+Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDEB6261D7348C300FEE448 /* Data+Int.swift */; };
@@ -95,6 +98,7 @@
 		DFD16A601D72E73300ACDBC8 /* CryptoKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CryptoKit.h; sourceTree = "<group>"; };
 		DFD16A611D72E73300ACDBC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DFD16A661D72EE7D00ACDBC8 /* MD5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MD5.swift; sourceTree = "<group>"; };
+		DFD79BC71D77DC07006B82DC /* EndianRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndianRepresentable.swift; sourceTree = "<group>"; };
 		DFDEB6261D7348C300FEE448 /* Data+Int.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Int.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -175,6 +179,7 @@
 				DF9E5F771D77127F0048F90E /* ExpressibleByInt.swift */,
 				DF9E5F7B1D7713570048F90E /* ShiftOperations.swift */,
 				DF9E5F7F1D7713B50048F90E /* RotateOperations.swift */,
+				DFD79BC71D77DC07006B82DC /* EndianRepresentable.swift */,
 			);
 			path = "Math Protocols";
 			sourceTree = "<group>";
@@ -478,6 +483,7 @@
 				DFD16A671D72EE7D00ACDBC8 /* MD5.swift in Sources */,
 				DF8AC1B01D7683CB0042C68A /* Data+HashFunction.swift in Sources */,
 				DF8AC1B41D7686B10042C68A /* Data+HashFunctions.swift in Sources */,
+				DFD79BC81D77DC07006B82DC /* EndianRepresentable.swift in Sources */,
 				DF7854841D7692F8004C506E /* SHA256.swift in Sources */,
 				DF9E5F801D7713B50048F90E /* RotateOperations.swift in Sources */,
 				DF236CE01D73F45F00EFF79B /* SHA1.swift in Sources */,
@@ -496,6 +502,7 @@
 				DFD16A681D72EE7D00ACDBC8 /* MD5.swift in Sources */,
 				DF8AC1B11D7683CB0042C68A /* Data+HashFunction.swift in Sources */,
 				DF8AC1B51D7686B10042C68A /* Data+HashFunctions.swift in Sources */,
+				DFD79BC91D77DC07006B82DC /* EndianRepresentable.swift in Sources */,
 				DF7854851D7692F8004C506E /* SHA256.swift in Sources */,
 				DF9E5F811D7713B50048F90E /* RotateOperations.swift in Sources */,
 				DF236CE11D73F45F00EFF79B /* SHA1.swift in Sources */,
@@ -514,6 +521,7 @@
 				DFD16A691D72EE7D00ACDBC8 /* MD5.swift in Sources */,
 				DF8AC1B21D7683CB0042C68A /* Data+HashFunction.swift in Sources */,
 				DF8AC1B61D7686B10042C68A /* Data+HashFunctions.swift in Sources */,
+				DFD79BCA1D77DC07006B82DC /* EndianRepresentable.swift in Sources */,
 				DF7854861D7692F8004C506E /* SHA256.swift in Sources */,
 				DF9E5F821D7713B50048F90E /* RotateOperations.swift in Sources */,
 				DF236CE21D73F45F00EFF79B /* SHA1.swift in Sources */,
