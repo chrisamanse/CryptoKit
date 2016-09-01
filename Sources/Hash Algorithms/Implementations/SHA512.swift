@@ -13,10 +13,6 @@ public struct SHA512: SHA2Variant {
         return .bigEndian
     }
     
-    public static var paddingLength: UInt {
-        return 128
-    }
-    
     public static var initialHashValues: [UInt64] {
         return [
             0x6a09e667f3bcc908, 0xbb67ae8584caa73b, 0x3c6ef372fe94f82b, 0xa54ff53a5f1d36f1,

@@ -13,10 +13,6 @@ public struct SHA384: SHA2Variant {
         return SHA512.endianess
     }
     
-    public static var paddingLength: UInt {
-        return SHA512.paddingLength
-    }
-    
     public static var initialHashValues: [UInt64] {
         return [
             0xcbbb9d5dc1059ed8, 0x629a292a367cd507, 0x9159015a3070dd17, 0x152fecd8f70e5939,
