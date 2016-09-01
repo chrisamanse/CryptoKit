@@ -68,6 +68,8 @@ public extension SHA2Variant {
         let k = self.kConstants
         var h = self.initialHashValues
         
+        let rounds = k.count
+        
         // Rotate amounts
         let s0Amounts = self.s0ShiftAndRotateAmounts
         let s1Amounts = self.s1ShiftAndRotateAmounts
@@ -92,7 +94,7 @@ public extension SHA2Variant {
                 }
             
             // Extend 16 words to 64 words
-            for i in 16..<64 {
+            for i in 16..<rounds {
                 let w15 = w[i-15]
                 let s0 = (w15 >>> s0Amounts.0) ^ (w15 >>> s0Amounts.1) ^ (w15 >> s0Amounts.2)
                 
@@ -105,7 +107,7 @@ public extension SHA2Variant {
             // Initialize hash value for this chunk
             var (A, B, C, D, E, F, G, H) = (h[0], h[1], h[2], h[3], h[4], h[5], h[6], h[7])
             
-            for i in 0..<64 {
+            for i in 0..<rounds {
                 let S1 = (E >>> S1Amounts.0) ^ (E >>> S1Amounts.1) ^ (E >>> S1Amounts.2)
                 let ch = (E & F) ^ ((~E) & G)
                 let temp1 = H &+ S1 &+ ch &+ k[i] &+ w[i]
