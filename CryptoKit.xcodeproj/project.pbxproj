@@ -50,6 +50,9 @@
 		DFC943831D742A9500F2BCEF /* MD5Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC943821D742A9500F2BCEF /* MD5Tests.swift */; };
 		DFC943851D742A9500F2BCEF /* CryptoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFD16A3C1D72E67200ACDBC8 /* CryptoKit.framework */; };
 		DFC9438C1D742CAB00F2BCEF /* Data+HexString.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC9438B1D742CAB00F2BCEF /* Data+HexString.swift */; };
+		DFCD14251D7833F300598003 /* SHA384.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCD14241D7833F300598003 /* SHA384.swift */; };
+		DFCD14261D7833F300598003 /* SHA384.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCD14241D7833F300598003 /* SHA384.swift */; };
+		DFCD14271D7833F300598003 /* SHA384.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCD14241D7833F300598003 /* SHA384.swift */; };
 		DFD16A621D72E77300ACDBC8 /* CryptoKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DFD16A601D72E73300ACDBC8 /* CryptoKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DFD16A631D72E77400ACDBC8 /* CryptoKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DFD16A601D72E73300ACDBC8 /* CryptoKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DFD16A641D72E77400ACDBC8 /* CryptoKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DFD16A601D72E73300ACDBC8 /* CryptoKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -105,6 +108,7 @@
 		DFC943821D742A9500F2BCEF /* MD5Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MD5Tests.swift; sourceTree = "<group>"; };
 		DFC943841D742A9500F2BCEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DFC9438B1D742CAB00F2BCEF /* Data+HexString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+HexString.swift"; sourceTree = "<group>"; };
+		DFCD14241D7833F300598003 /* SHA384.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHA384.swift; sourceTree = "<group>"; };
 		DFD16A3C1D72E67200ACDBC8 /* CryptoKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CryptoKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFD16A4A1D72E68400ACDBC8 /* CryptoKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CryptoKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFD16A571D72E6B400ACDBC8 /* CryptoKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CryptoKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -186,6 +190,7 @@
 				DFBD2DE61D77D39500159A96 /* SHA2Variant.swift */,
 				DFFA34521D77E80400DC0204 /* SHA224.swift */,
 				DF7854831D7692F8004C506E /* SHA256.swift */,
+				DFCD14241D7833F300598003 /* SHA384.swift */,
 				DF0619AD1D78155500269CFC /* SHA512.swift */,
 			);
 			path = Implementations;
@@ -500,6 +505,7 @@
 			files = (
 				DF9E5F7C1D7713570048F90E /* ShiftOperations.swift in Sources */,
 				DF9E5F781D77127F0048F90E /* ExpressibleByInt.swift in Sources */,
+				DFCD14251D7833F300598003 /* SHA384.swift in Sources */,
 				DF8AC1AC1D76839C0042C68A /* HashAlgorithm.swift in Sources */,
 				DFD16A671D72EE7D00ACDBC8 /* MD5.swift in Sources */,
 				DF8AC1B01D7683CB0042C68A /* Data+HashFunction.swift in Sources */,
@@ -522,6 +528,7 @@
 			files = (
 				DF9E5F7D1D7713570048F90E /* ShiftOperations.swift in Sources */,
 				DF9E5F791D77127F0048F90E /* ExpressibleByInt.swift in Sources */,
+				DFCD14261D7833F300598003 /* SHA384.swift in Sources */,
 				DF8AC1AD1D76839C0042C68A /* HashAlgorithm.swift in Sources */,
 				DFD16A681D72EE7D00ACDBC8 /* MD5.swift in Sources */,
 				DF8AC1B11D7683CB0042C68A /* Data+HashFunction.swift in Sources */,
@@ -544,6 +551,7 @@
 			files = (
 				DF9E5F7E1D7713570048F90E /* ShiftOperations.swift in Sources */,
 				DF9E5F7A1D77127F0048F90E /* ExpressibleByInt.swift in Sources */,
+				DFCD14271D7833F300598003 /* SHA384.swift in Sources */,
 				DF8AC1AE1D76839C0042C68A /* HashAlgorithm.swift in Sources */,
 				DFD16A691D72EE7D00ACDBC8 /* MD5.swift in Sources */,
 				DF8AC1B21D7683CB0042C68A /* Data+HashFunction.swift in Sources */,
