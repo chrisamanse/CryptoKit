@@ -41,6 +41,9 @@
 		DFA61E821D74713300766CFB /* MD5Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC943821D742A9500F2BCEF /* MD5Tests.swift */; };
 		DFA61E831D74713300766CFB /* SHA1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1521FD1D7449290068726D /* SHA1Tests.swift */; };
 		DFA61E841D74713300766CFB /* Data+HexString.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC9438B1D742CAB00F2BCEF /* Data+HexString.swift */; };
+		DFBD2DE71D77D39500159A96 /* SHA2Variant.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBD2DE61D77D39500159A96 /* SHA2Variant.swift */; };
+		DFBD2DE81D77D39500159A96 /* SHA2Variant.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBD2DE61D77D39500159A96 /* SHA2Variant.swift */; };
+		DFBD2DE91D77D39500159A96 /* SHA2Variant.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBD2DE61D77D39500159A96 /* SHA2Variant.swift */; };
 		DFC943831D742A9500F2BCEF /* MD5Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC943821D742A9500F2BCEF /* MD5Tests.swift */; };
 		DFC943851D742A9500F2BCEF /* CryptoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFD16A3C1D72E67200ACDBC8 /* CryptoKit.framework */; };
 		DFC9438C1D742CAB00F2BCEF /* Data+HexString.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC9438B1D742CAB00F2BCEF /* Data+HexString.swift */; };
@@ -88,6 +91,7 @@
 		DF9E5F7B1D7713570048F90E /* ShiftOperations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShiftOperations.swift; sourceTree = "<group>"; };
 		DF9E5F7F1D7713B50048F90E /* RotateOperations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RotateOperations.swift; sourceTree = "<group>"; };
 		DFA61E761D74701100766CFB /* CryptoKit iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CryptoKit iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFBD2DE61D77D39500159A96 /* SHA2Variant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHA2Variant.swift; sourceTree = "<group>"; };
 		DFC943801D742A9500F2BCEF /* CryptoKit macOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CryptoKit macOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFC943821D742A9500F2BCEF /* MD5Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MD5Tests.swift; sourceTree = "<group>"; };
 		DFC943841D742A9500F2BCEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -168,6 +172,7 @@
 			children = (
 				DFD16A661D72EE7D00ACDBC8 /* MD5.swift */,
 				DF236CDF1D73F45F00EFF79B /* SHA1.swift */,
+				DFBD2DE61D77D39500159A96 /* SHA2Variant.swift */,
 				DF7854831D7692F8004C506E /* SHA256.swift */,
 			);
 			path = Implementations;
@@ -489,6 +494,7 @@
 				DF236CE01D73F45F00EFF79B /* SHA1.swift in Sources */,
 				DFDEB6271D7348C300FEE448 /* Data+Int.swift in Sources */,
 				DF30F3711D768B9F00253128 /* HashPreprocessor.swift in Sources */,
+				DFBD2DE71D77D39500159A96 /* SHA2Variant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -508,6 +514,7 @@
 				DF236CE11D73F45F00EFF79B /* SHA1.swift in Sources */,
 				DFDEB6281D7348C300FEE448 /* Data+Int.swift in Sources */,
 				DF30F3721D768B9F00253128 /* HashPreprocessor.swift in Sources */,
+				DFBD2DE81D77D39500159A96 /* SHA2Variant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,6 +534,7 @@
 				DF236CE21D73F45F00EFF79B /* SHA1.swift in Sources */,
 				DFDEB6291D7348C300FEE448 /* Data+Int.swift in Sources */,
 				DF30F3731D768B9F00253128 /* HashPreprocessor.swift in Sources */,
+				DFBD2DE91D77D39500159A96 /* SHA2Variant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
