@@ -42,7 +42,7 @@ public extension SHA2Variant {
     }
     
     public static func generateHashValues(from message: Data) -> [BaseUnit] {
-        let paddedMessage = preprocess(message: message)
+        let paddedMessage = self.preprocess(message: message)
         
         // Constants
         let k = self.kConstants
@@ -110,6 +110,6 @@ public extension SHA2Variant {
     public static func digest(_ message: Data) -> Data {
         let finalHashValues = self.generateHashValues(from: message)
         
-        return combine(hashValues: finalHashValues)
+        return self.combine(hashValues: finalHashValues)
     }
 }
