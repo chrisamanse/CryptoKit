@@ -21,9 +21,6 @@ public protocol HashPreprocessor {
 }
 
 public extension HashPreprocessor {
-    public static var paddingLength: UInt {
-        return 64
-    }
     public static var endianess: Endianess {
         return .littleEndian
     }

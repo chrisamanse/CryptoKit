@@ -144,7 +144,7 @@ public extension SHA2Variant {
 }
 
 public extension SHA2Variant where Self: HashPreprocessor, Self.BaseUnit == UInt64 {
-    public static var paddingLength: UInt {
+    public static var blockSize: UInt {
         return 128
     }
     
