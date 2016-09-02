@@ -10,7 +10,14 @@ import XCTest
 @testable import CryptoKit
 
 class SHA2VariantTests: XCTestCase {
-
+    let testStrings = [
+        "abc",
+        "abcdbcdecdefdefgefghfghighijhijkijkljklmklmnlmnomnopnopq",
+        String(repeating: "a", count: 1000000),
+        String(repeating: "01234567012345670123456701234567", count: 20)
+    ]
+    let test2For384and512 = "abcdefghbcdefghicdefghijdefghijkefghijklfghijklmghijklmnhijklmnoijklmnopjklmnopqklmnopqrlmnopqrsmnopqrstnopqrstu"
+    
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -21,37 +28,32 @@ class SHA2VariantTests: XCTestCase {
         super.tearDown()
     }
 
-    func testSHA2Variants() {
-        let testStrings = [
-            "abc",
-            "abcdbcdecdefdefgefghfghighijhijkijkljklmklmnlmnomnopnopq",
-            String(repeating: "a", count: 1000000),
-            String(repeating: "01234567012345670123456701234567", count: 20)
-        ]
-        
+    func testSHA224() {
         // SHA224
         let sha224Results = testResults(for: .sha224)
         XCTAssertEqual(testStrings[0].sha2Hash(.sha224), sha224Results[0])
         XCTAssertEqual(testStrings[1].sha2Hash(.sha224), sha224Results[1])
         XCTAssertEqual(testStrings[2].sha2Hash(.sha224), sha224Results[2])
         XCTAssertEqual(testStrings[3].sha2Hash(.sha224), sha224Results[3])
-        
+    }
+    
+    func testSHA256() {
         // SHA256
         let sha256Results = testResults(for: .sha256)
         XCTAssertEqual(testStrings[0].sha2Hash(.sha256), sha256Results[0])
         XCTAssertEqual(testStrings[1].sha2Hash(.sha256), sha256Results[1])
         XCTAssertEqual(testStrings[2].sha2Hash(.sha256), sha256Results[2])
         XCTAssertEqual(testStrings[3].sha2Hash(.sha256), sha256Results[3])
-        
-        let test2For384and512 = "abcdefghbcdefghicdefghijdefghijkefghijklfghijklmghijklmnhijklmnoijklmnopjklmnopqklmnopqrlmnopqrsmnopqrstnopqrstu"
-        
+    }
+    func testSHA384() {
         // SHA384
         let sha384Results = testResults(for: .sha384)
         XCTAssertEqual(testStrings[0].sha2Hash(.sha384), sha384Results[0])
         XCTAssertEqual(test2For384and512.sha2Hash(.sha384), sha384Results[1])
         XCTAssertEqual(testStrings[2].sha2Hash(.sha384), sha384Results[2])
         XCTAssertEqual(testStrings[3].sha2Hash(.sha384), sha384Results[3])
-        
+    }
+    func testSHA512() {
         // SHA512
         let sha512Results = testResults(for: .sha512)
         XCTAssertEqual(testStrings[0].sha2Hash(.sha512), sha512Results[0])
