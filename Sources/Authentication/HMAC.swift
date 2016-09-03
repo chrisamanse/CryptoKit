@@ -21,11 +21,19 @@ public struct HMAC<Hash: HashAlgorithm> {
             newKey.append(contentsOf: Array(repeating: UInt8(0x00), count: zeroPaddingCount))
         }
         
+        var oBytes: [UInt8] = []
+        var iBytes: [UInt8] = []
+        
+        newKey.forEach {
+            oBytes.append($0 ^ 0x5c)
+            iBytes.append($0 ^ 0x36)
+        }
+        
         // o key pad = XOR key with 0x5c bytes
-        let oKeyPad = Data(newKey.map { $0 ^ 0x5c })
+        let oKeyPad = Data(oBytes)
         
         // i key pad = XOR key with 0x36 bytes
-        let iKeyPad = Data(newKey.map { $0 ^ 0x36 })
+        let iKeyPad = Data(iBytes)
         
         return Hash.digest(oKeyPad + Hash.digest(iKeyPad + message))
     }
