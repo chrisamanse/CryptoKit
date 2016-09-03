@@ -8,12 +8,18 @@
 
 import Foundation
 
-public struct HMAC<Hash: HashAlgorithm> {
-    public static func generate(key: Data, message: Data) -> Data {
-        let blockSize = Int(Hash.blockSize)
+public protocol HMAC: HashAlgorithm {
+    static func hmac(key: Data, message: Data) -> Data
+}
+
+public extension HMAC {
+    public static func hmac(key: Data, message: Data) -> Data {
+        let blockSize = Int(self.blockSize)
+        
+        let hash = self.digest
         
         // Shorten key if greater than block size
-        var newKey: Data = key.count > blockSize ? Hash.digest(key) : key
+        var newKey: Data = key.count > blockSize ? hash(key) : key
         
         // Zero pad when key is less than block size
         let zeroPaddingCount = blockSize - newKey.count
@@ -35,6 +41,6 @@ public struct HMAC<Hash: HashAlgorithm> {
         // i key pad = XOR key with 0x36 bytes
         let iKeyPad = Data(iBytes)
         
-        return Hash.digest(oKeyPad + Hash.digest(iKeyPad + message))
+        return hash(oKeyPad + hash(iKeyPad + message))
     }
 }

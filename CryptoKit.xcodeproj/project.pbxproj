@@ -23,6 +23,9 @@
 		DF35559D1D79243C00DE56FD /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF35559C1D79243C00DE56FD /* HMAC.swift */; };
 		DF35559E1D79243C00DE56FD /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF35559C1D79243C00DE56FD /* HMAC.swift */; };
 		DF35559F1D79243C00DE56FD /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF35559C1D79243C00DE56FD /* HMAC.swift */; };
+		DF72FFF51D7A93540023C083 /* HMAC+Conformance.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF72FFF41D7A93540023C083 /* HMAC+Conformance.swift */; };
+		DF72FFF61D7A93540023C083 /* HMAC+Conformance.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF72FFF41D7A93540023C083 /* HMAC+Conformance.swift */; };
+		DF72FFF71D7A93540023C083 /* HMAC+Conformance.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF72FFF41D7A93540023C083 /* HMAC+Conformance.swift */; };
 		DF7854841D7692F8004C506E /* SHA256.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7854831D7692F8004C506E /* SHA256.swift */; };
 		DF7854851D7692F8004C506E /* SHA256.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7854831D7692F8004C506E /* SHA256.swift */; };
 		DF7854861D7692F8004C506E /* SHA256.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7854831D7692F8004C506E /* SHA256.swift */; };
@@ -100,6 +103,7 @@
 		DF30F3701D768B9F00253128 /* HashPreprocessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HashPreprocessor.swift; sourceTree = "<group>"; };
 		DF3555971D7920D300DE56FD /* HashPreprocessor+HashAlgorithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HashPreprocessor+HashAlgorithm.swift"; sourceTree = "<group>"; };
 		DF35559C1D79243C00DE56FD /* HMAC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMAC.swift; sourceTree = "<group>"; };
+		DF72FFF41D7A93540023C083 /* HMAC+Conformance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HMAC+Conformance.swift"; sourceTree = "<group>"; };
 		DF7854831D7692F8004C506E /* SHA256.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = SHA256.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		DF8AC1AB1D76839C0042C68A /* HashAlgorithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HashAlgorithm.swift; sourceTree = "<group>"; };
 		DF8AC1AF1D7683CB0042C68A /* Data+HashFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+HashFunction.swift"; sourceTree = "<group>"; };
@@ -171,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				DF35559C1D79243C00DE56FD /* HMAC.swift */,
+				DF72FFF41D7A93540023C083 /* HMAC+Conformance.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -525,6 +530,7 @@
 				DF8AC1B41D7686B10042C68A /* Data+HashFunctions.swift in Sources */,
 				DFD79BC81D77DC07006B82DC /* EndianRepresentable.swift in Sources */,
 				DF7854841D7692F8004C506E /* SHA256.swift in Sources */,
+				DF72FFF51D7A93540023C083 /* HMAC+Conformance.swift in Sources */,
 				DF9E5F801D7713B50048F90E /* RotateOperations.swift in Sources */,
 				DF0619AE1D78155500269CFC /* SHA512.swift in Sources */,
 				DFFA34531D77E80400DC0204 /* SHA224.swift in Sources */,
@@ -550,6 +556,7 @@
 				DF8AC1B51D7686B10042C68A /* Data+HashFunctions.swift in Sources */,
 				DFD79BC91D77DC07006B82DC /* EndianRepresentable.swift in Sources */,
 				DF7854851D7692F8004C506E /* SHA256.swift in Sources */,
+				DF72FFF61D7A93540023C083 /* HMAC+Conformance.swift in Sources */,
 				DF9E5F811D7713B50048F90E /* RotateOperations.swift in Sources */,
 				DF0619AF1D78155500269CFC /* SHA512.swift in Sources */,
 				DFFA34541D77E80400DC0204 /* SHA224.swift in Sources */,
@@ -575,6 +582,7 @@
 				DF8AC1B61D7686B10042C68A /* Data+HashFunctions.swift in Sources */,
 				DFD79BCA1D77DC07006B82DC /* EndianRepresentable.swift in Sources */,
 				DF7854861D7692F8004C506E /* SHA256.swift in Sources */,
+				DF72FFF71D7A93540023C083 /* HMAC+Conformance.swift in Sources */,
 				DF9E5F821D7713B50048F90E /* RotateOperations.swift in Sources */,
 				DF0619B01D78155500269CFC /* SHA512.swift in Sources */,
 				DFFA34551D77E80400DC0204 /* SHA224.swift in Sources */,
