@@ -143,7 +143,7 @@ public extension SHA2Variant {
     }
 }
 
-public extension SHA2Variant where Self: HashPreprocessor, Self.BaseUnit == UInt64 {
+public extension SHA2Variant where Self.BaseUnit == UInt64 {
     public static var blockSize: UInt {
         return 128
     }
