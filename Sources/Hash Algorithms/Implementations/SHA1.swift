@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct SHA1: HashAlgorithm, HashPreprocessor {
+public enum SHA1: HashAlgorithm, HashPreprocessor {
     public static var endianess: Endianess {
         return .bigEndian
     }

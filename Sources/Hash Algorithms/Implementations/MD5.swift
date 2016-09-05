@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct MD5: HashAlgorithm, HashPreprocessor {
+public enum MD5: HashAlgorithm, HashPreprocessor {
     public static func digest(_ message: Data) -> Data {
         // Create mutable copy of message
         let messageCopy = self.preprocess(message: message)

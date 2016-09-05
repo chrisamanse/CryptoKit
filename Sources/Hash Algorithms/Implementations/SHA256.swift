@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct SHA256: SHA2Variant {
+public enum SHA256: SHA2Variant {
     public typealias BaseUnit = UInt32
     
     public static var endianess: Endianess {

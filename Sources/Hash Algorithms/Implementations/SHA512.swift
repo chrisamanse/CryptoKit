@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct SHA512: SHA2Variant {
+public enum SHA512: SHA2Variant {
     public static var endianess: Endianess {
         return .bigEndian
     }
