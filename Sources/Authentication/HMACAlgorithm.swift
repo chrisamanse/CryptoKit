@@ -8,11 +8,11 @@
 
 import Foundation
 
-public protocol HMAC: HashAlgorithm {
+public protocol HMACAlgorithm: HashAlgorithm {
     static func hmac(key: Data, message: Data) -> Data
 }
 
-public extension HMAC {
+public extension HMACAlgorithm {
     public static func hmac(key: Data, message: Data) -> Data {
         let blockSize = Int(self.blockSize)
         
