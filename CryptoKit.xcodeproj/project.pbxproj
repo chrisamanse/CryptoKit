@@ -32,12 +32,12 @@
 		DF8AC1AC1D76839C0042C68A /* HashAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8AC1AB1D76839C0042C68A /* HashAlgorithm.swift */; };
 		DF8AC1AD1D76839C0042C68A /* HashAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8AC1AB1D76839C0042C68A /* HashAlgorithm.swift */; };
 		DF8AC1AE1D76839C0042C68A /* HashAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8AC1AB1D76839C0042C68A /* HashAlgorithm.swift */; };
-		DF8AC1B01D7683CB0042C68A /* Data+HashFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8AC1AF1D7683CB0042C68A /* Data+HashFunction.swift */; };
-		DF8AC1B11D7683CB0042C68A /* Data+HashFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8AC1AF1D7683CB0042C68A /* Data+HashFunction.swift */; };
-		DF8AC1B21D7683CB0042C68A /* Data+HashFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8AC1AF1D7683CB0042C68A /* Data+HashFunction.swift */; };
-		DF8AC1B41D7686B10042C68A /* Data+HashFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8AC1B31D7686B10042C68A /* Data+HashFunctions.swift */; };
-		DF8AC1B51D7686B10042C68A /* Data+HashFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8AC1B31D7686B10042C68A /* Data+HashFunctions.swift */; };
-		DF8AC1B61D7686B10042C68A /* Data+HashFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8AC1B31D7686B10042C68A /* Data+HashFunctions.swift */; };
+		DF8AC1B01D7683CB0042C68A /* Data+Hashing.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8AC1AF1D7683CB0042C68A /* Data+Hashing.swift */; };
+		DF8AC1B11D7683CB0042C68A /* Data+Hashing.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8AC1AF1D7683CB0042C68A /* Data+Hashing.swift */; };
+		DF8AC1B21D7683CB0042C68A /* Data+Hashing.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8AC1AF1D7683CB0042C68A /* Data+Hashing.swift */; };
+		DF8AC1B41D7686B10042C68A /* Data+HashingOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8AC1B31D7686B10042C68A /* Data+HashingOptions.swift */; };
+		DF8AC1B51D7686B10042C68A /* Data+HashingOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8AC1B31D7686B10042C68A /* Data+HashingOptions.swift */; };
+		DF8AC1B61D7686B10042C68A /* Data+HashingOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8AC1B31D7686B10042C68A /* Data+HashingOptions.swift */; };
 		DF9E5F781D77127F0048F90E /* ExpressibleByInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9E5F771D77127F0048F90E /* ExpressibleByInt.swift */; };
 		DF9E5F791D77127F0048F90E /* ExpressibleByInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9E5F771D77127F0048F90E /* ExpressibleByInt.swift */; };
 		DF9E5F7A1D77127F0048F90E /* ExpressibleByInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9E5F771D77127F0048F90E /* ExpressibleByInt.swift */; };
@@ -106,8 +106,8 @@
 		DF72FFF41D7A93540023C083 /* HMAC+Conformance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HMAC+Conformance.swift"; sourceTree = "<group>"; };
 		DF7854831D7692F8004C506E /* SHA256.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = SHA256.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		DF8AC1AB1D76839C0042C68A /* HashAlgorithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HashAlgorithm.swift; sourceTree = "<group>"; };
-		DF8AC1AF1D7683CB0042C68A /* Data+HashFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+HashFunction.swift"; sourceTree = "<group>"; };
-		DF8AC1B31D7686B10042C68A /* Data+HashFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+HashFunctions.swift"; sourceTree = "<group>"; };
+		DF8AC1AF1D7683CB0042C68A /* Data+Hashing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Hashing.swift"; sourceTree = "<group>"; };
+		DF8AC1B31D7686B10042C68A /* Data+HashingOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+HashingOptions.swift"; sourceTree = "<group>"; };
 		DF9E5F771D77127F0048F90E /* ExpressibleByInt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpressibleByInt.swift; sourceTree = "<group>"; };
 		DF9E5F7B1D7713570048F90E /* ShiftOperations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShiftOperations.swift; sourceTree = "<group>"; };
 		DF9E5F7F1D7713B50048F90E /* RotateOperations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RotateOperations.swift; sourceTree = "<group>"; };
@@ -194,8 +194,8 @@
 		DF74E9AD1D73DE6200B8D700 /* Data Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				DF8AC1AF1D7683CB0042C68A /* Data+HashFunction.swift */,
-				DF8AC1B31D7686B10042C68A /* Data+HashFunctions.swift */,
+				DF8AC1AF1D7683CB0042C68A /* Data+Hashing.swift */,
+				DF8AC1B31D7686B10042C68A /* Data+HashingOptions.swift */,
 				DFDEB6261D7348C300FEE448 /* Data+Int.swift */,
 			);
 			path = "Data Extensions";
@@ -526,8 +526,8 @@
 				DFCD14251D7833F300598003 /* SHA384.swift in Sources */,
 				DF8AC1AC1D76839C0042C68A /* HashAlgorithm.swift in Sources */,
 				DFD16A671D72EE7D00ACDBC8 /* MD5.swift in Sources */,
-				DF8AC1B01D7683CB0042C68A /* Data+HashFunction.swift in Sources */,
-				DF8AC1B41D7686B10042C68A /* Data+HashFunctions.swift in Sources */,
+				DF8AC1B01D7683CB0042C68A /* Data+Hashing.swift in Sources */,
+				DF8AC1B41D7686B10042C68A /* Data+HashingOptions.swift in Sources */,
 				DFD79BC81D77DC07006B82DC /* EndianRepresentable.swift in Sources */,
 				DF7854841D7692F8004C506E /* SHA256.swift in Sources */,
 				DF72FFF51D7A93540023C083 /* HMAC+Conformance.swift in Sources */,
@@ -552,8 +552,8 @@
 				DFCD14261D7833F300598003 /* SHA384.swift in Sources */,
 				DF8AC1AD1D76839C0042C68A /* HashAlgorithm.swift in Sources */,
 				DFD16A681D72EE7D00ACDBC8 /* MD5.swift in Sources */,
-				DF8AC1B11D7683CB0042C68A /* Data+HashFunction.swift in Sources */,
-				DF8AC1B51D7686B10042C68A /* Data+HashFunctions.swift in Sources */,
+				DF8AC1B11D7683CB0042C68A /* Data+Hashing.swift in Sources */,
+				DF8AC1B51D7686B10042C68A /* Data+HashingOptions.swift in Sources */,
 				DFD79BC91D77DC07006B82DC /* EndianRepresentable.swift in Sources */,
 				DF7854851D7692F8004C506E /* SHA256.swift in Sources */,
 				DF72FFF61D7A93540023C083 /* HMAC+Conformance.swift in Sources */,
@@ -578,8 +578,8 @@
 				DFCD14271D7833F300598003 /* SHA384.swift in Sources */,
 				DF8AC1AE1D76839C0042C68A /* HashAlgorithm.swift in Sources */,
 				DFD16A691D72EE7D00ACDBC8 /* MD5.swift in Sources */,
-				DF8AC1B21D7683CB0042C68A /* Data+HashFunction.swift in Sources */,
-				DF8AC1B61D7686B10042C68A /* Data+HashFunctions.swift in Sources */,
+				DF8AC1B21D7683CB0042C68A /* Data+Hashing.swift in Sources */,
+				DF8AC1B61D7686B10042C68A /* Data+HashingOptions.swift in Sources */,
 				DFD79BCA1D77DC07006B82DC /* EndianRepresentable.swift in Sources */,
 				DF7854861D7692F8004C506E /* SHA256.swift in Sources */,
 				DF72FFF71D7A93540023C083 /* HMAC+Conformance.swift in Sources */,
