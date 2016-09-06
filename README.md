@@ -26,9 +26,17 @@ A Swift framework containing implementations of cryptographic functions.
 
 ```swift
 
-let message = "abc".data(using: .utf8)!
+let message = "The quick brown fox jumps over the lazy dog".data(using: .utf8)!
 
 let hash = message.digest(using: .sha256) // Supports MD5, SHA-1 and SHA-2 variants
+
+```
+
+## HMAC
+
+```swift
+
+let hmac = HMAC(key: secret, message: message, hashFunction: .sha1)
 
 ```
 
