@@ -5,6 +5,20 @@
 
 A Swift framework containing implementations of cryptographic functions.
 
+## Features
+
+### Hashing Algorithms
+
+- [x] MD5
+- [x] SHA-1
+- [x] SHA-224
+- [x] SHA-256
+- [x] SHA-384
+- [x] SHA-512
+
+### HMAC (Hash-based Message Authentication Code)
+
+- [x] HMAC (using any of the implemented hash functions)
 
 # Usage
 
