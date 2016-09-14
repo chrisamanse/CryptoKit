@@ -22,7 +22,7 @@ public enum SHA1: HashAlgorithm, HashPreprocessor {
         var b0: UInt32 = 0xefcdab89
         var c0: UInt32 = 0x98badcfe
         var d0: UInt32 = 0x10325476
-        var e0: UInt32 = 0xC3D2E1F0
+        var e0: UInt32 = 0xc3d2e1f0
         
         // Divide into 512-bit (64-byte) chunks
         // Since data length is 0 bytes (mod 64), all chunks are 64 bytes
