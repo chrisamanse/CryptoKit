@@ -8,23 +8,34 @@
 
 import Foundation
 
-public enum MD5: HashAlgorithm, HashPreprocessor {
-    public static func digest(_ message: Data) -> Data {
-        // Create mutable copy of message
-        let messageCopy = self.preprocess(message: message)
-        
-        // Initialize variables
-        var a0: UInt32 = 0x67452301
-        var b0: UInt32 = 0xefcdab89
-        var c0: UInt32 = 0x98badcfe
-        var d0: UInt32 = 0x10325476
+public enum MD5: HashAlgorithm {
+    public static var outputSize: UInt {
+        return 16
+    }
+    public static var blockSize: UInt {
+        return 64
+    }
+}
+
+extension MD5: MerkleDamgardConstructor {
+    public static var initializationVector: [UInt32] {
+        return [0x67452301, 0xefcdab89, 0x98badcfe, 0x10325476]
+    }
+    
+    public static var rounds: UInt {
+        return 64
+    }
+    
+    public static func compress(_ data: Data) -> [UInt32] {
+        // Initialize hash value
+        var h = self.initializationVector
         
         // Divide into 512-bit (64-byte) chunks
         // Since data length is 0 bytes (mod 64), all chunks are 64 bytes
-        let chunkLength = 64
-        for index in stride(from: messageCopy.startIndex, to: messageCopy.endIndex, by: chunkLength) {
+        let chunkLength = Int(self.blockSize)
+        for index in stride(from: data.startIndex, to: data.endIndex, by: chunkLength) {
             // Get 512-bit chunk
-            let chunk = messageCopy.subdata(in: index ..< index + chunkLength)
+            let chunk = data.subdata(in: index ..< index + chunkLength)
             
             // Divide chunk into 32-bit words (512 is divisible by 32, thus all words are 32 bits)
             // Since 512 is divisible by 32, simply create array by converting the Data pointer to a UInt32 array pointer
@@ -34,13 +45,13 @@ public enum MD5: HashAlgorithm, HashPreprocessor {
             }
             
             // Initiaize hash value for this chunk
-            var A = a0
-            var B = b0
-            var C = c0
-            var D = d0
+            var A = h[0]
+            var B = h[1]
+            var C = h[2]
+            var D = h[3]
             
             // Main loop
-            for i in 0..<64 {
+            for i in 0 ..< Int(self.rounds) {
                 // Divide 0..<64 into four rounds, i.e. 0..<16 = round 1, 16..<32 = round2, etc.
                 let round = i / 16
                 
@@ -54,13 +65,13 @@ public enum MD5: HashAlgorithm, HashPreprocessor {
                     g = i
                 case 1:
                     F = (D & B) | ((~D) & C)
-                    g = ((5 * i) + 1) % 16
+                    g = ((5 &* i) &+ 1) % 16
                 case 2:
                     F = B ^ C ^ D
-                    g = ((3 * i) + 5) % 16
+                    g = ((3 &* i) &+ 5) % 16
                 case 3:
                     F = C ^ (B | (~D))
-                    g = (7 * i) % 16
+                    g = (7 &* i) % 16
                 default:
                     F = 0
                     g = 0
@@ -68,20 +79,27 @@ public enum MD5: HashAlgorithm, HashPreprocessor {
                 
                 // Swap values
                 let newB = B &+ ((A &+ F &+ K(i) &+ M[g])) <<< s(i)
-                (D, C, B, A) = (C, B, newB, D)
+                let oldD = D
+                
+                D = C
+                C = B
+                B = newB
+                A = oldD
             }
             
             // Add current chunk's hash to result (allow overflow)
-            a0 = a0 &+ A
-            b0 = b0 &+ B
-            c0 = c0 &+ C
-            d0 = d0 &+ D
+            let currentHash = [A, B, C, D]
+            
+            for i in 0..<h.count {
+                h[i] = h[i] &+ currentHash[i]
+            }
         }
         
-        // Combine
-        return Data(from: a0) + Data(from: b0) + Data(from: c0) + Data(from: d0)
+        return h
     }
-    
+}
+
+extension MD5 {
     /// Get binary integer part of the sines of integers (Radians)
     static func K(_ i: Int) -> UInt32 {
         return UInt32(floor(4294967296 * abs(sin(Double(i) + 1))))

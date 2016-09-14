@@ -7,22 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DF0619AE1D78155500269CFC /* SHA512.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0619AD1D78155500269CFC /* SHA512.swift */; };
-		DF0619AF1D78155500269CFC /* SHA512.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0619AD1D78155500269CFC /* SHA512.swift */; };
-		DF0619B01D78155500269CFC /* SHA512.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0619AD1D78155500269CFC /* SHA512.swift */; };
-		DF1521FE1D7449290068726D /* SHA1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1521FD1D7449290068726D /* SHA1Tests.swift */; };
-		DF236CE01D73F45F00EFF79B /* SHA1.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF236CDF1D73F45F00EFF79B /* SHA1.swift */; };
-		DF236CE11D73F45F00EFF79B /* SHA1.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF236CDF1D73F45F00EFF79B /* SHA1.swift */; };
-		DF236CE21D73F45F00EFF79B /* SHA1.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF236CDF1D73F45F00EFF79B /* SHA1.swift */; };
-		DF30F3711D768B9F00253128 /* HashPreprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF30F3701D768B9F00253128 /* HashPreprocessor.swift */; };
-		DF30F3721D768B9F00253128 /* HashPreprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF30F3701D768B9F00253128 /* HashPreprocessor.swift */; };
-		DF30F3731D768B9F00253128 /* HashPreprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF30F3701D768B9F00253128 /* HashPreprocessor.swift */; };
-		DF3555981D7920D300DE56FD /* HashPreprocessor+HashAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3555971D7920D300DE56FD /* HashPreprocessor+HashAlgorithm.swift */; };
-		DF3555991D7920D300DE56FD /* HashPreprocessor+HashAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3555971D7920D300DE56FD /* HashPreprocessor+HashAlgorithm.swift */; };
-		DF35559A1D7920D300DE56FD /* HashPreprocessor+HashAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3555971D7920D300DE56FD /* HashPreprocessor+HashAlgorithm.swift */; };
-		DF7854841D7692F8004C506E /* SHA256.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7854831D7692F8004C506E /* SHA256.swift */; };
-		DF7854851D7692F8004C506E /* SHA256.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7854831D7692F8004C506E /* SHA256.swift */; };
-		DF7854861D7692F8004C506E /* SHA256.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7854831D7692F8004C506E /* SHA256.swift */; };
 		DF8AC1AC1D76839C0042C68A /* HashAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8AC1AB1D76839C0042C68A /* HashAlgorithm.swift */; };
 		DF8AC1AD1D76839C0042C68A /* HashAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8AC1AB1D76839C0042C68A /* HashAlgorithm.swift */; };
 		DF8AC1AE1D76839C0042C68A /* HashAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8AC1AB1D76839C0042C68A /* HashAlgorithm.swift */; };
@@ -37,11 +21,32 @@
 		DF9E5F821D7713B50048F90E /* RotateOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9E5F7F1D7713B50048F90E /* RotateOperations.swift */; };
 		DFA61E7B1D74701100766CFB /* CryptoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFD16A4A1D72E68400ACDBC8 /* CryptoKit.framework */; };
 		DFA61E821D74713300766CFB /* MD5Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC943821D742A9500F2BCEF /* MD5Tests.swift */; };
-		DFA61E831D74713300766CFB /* SHA1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1521FD1D7449290068726D /* SHA1Tests.swift */; };
 		DFA61E841D74713300766CFB /* Data+HexString.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC9438B1D742CAB00F2BCEF /* Data+HexString.swift */; };
-		DFBD2DE71D77D39500159A96 /* SHA2Variant.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBD2DE61D77D39500159A96 /* SHA2Variant.swift */; };
-		DFBD2DE81D77D39500159A96 /* SHA2Variant.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBD2DE61D77D39500159A96 /* SHA2Variant.swift */; };
-		DFBD2DE91D77D39500159A96 /* SHA2Variant.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBD2DE61D77D39500159A96 /* SHA2Variant.swift */; };
+		DFB7E1341D8A591D000C2030 /* MerkleDamgardConstructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB7E1331D8A591D000C2030 /* MerkleDamgardConstructor.swift */; };
+		DFB7E1351D8A591D000C2030 /* MerkleDamgardConstructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB7E1331D8A591D000C2030 /* MerkleDamgardConstructor.swift */; };
+		DFB7E1361D8A591D000C2030 /* MerkleDamgardConstructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB7E1331D8A591D000C2030 /* MerkleDamgardConstructor.swift */; };
+		DFB7E1371D8A8D5E000C2030 /* SHA1.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF236CDF1D73F45F00EFF79B /* SHA1.swift */; };
+		DFB7E1381D8A8D5E000C2030 /* SHA1.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF236CDF1D73F45F00EFF79B /* SHA1.swift */; };
+		DFB7E1391D8A8D5F000C2030 /* SHA1.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF236CDF1D73F45F00EFF79B /* SHA1.swift */; };
+		DFB7E13A1D8A9474000C2030 /* SHA1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1521FD1D7449290068726D /* SHA1Tests.swift */; };
+		DFB7E13B1D8A9474000C2030 /* SHA1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1521FD1D7449290068726D /* SHA1Tests.swift */; };
+		DFB7E13C1D8A958F000C2030 /* SHA2Variant.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBD2DE61D77D39500159A96 /* SHA2Variant.swift */; };
+		DFB7E13D1D8A9590000C2030 /* SHA2Variant.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBD2DE61D77D39500159A96 /* SHA2Variant.swift */; };
+		DFB7E13E1D8A9591000C2030 /* SHA2Variant.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBD2DE61D77D39500159A96 /* SHA2Variant.swift */; };
+		DFB7E13F1D8A9706000C2030 /* SHA224.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFA34521D77E80400DC0204 /* SHA224.swift */; };
+		DFB7E1401D8A9706000C2030 /* SHA224.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFA34521D77E80400DC0204 /* SHA224.swift */; };
+		DFB7E1411D8A9707000C2030 /* SHA224.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFA34521D77E80400DC0204 /* SHA224.swift */; };
+		DFB7E1431D8A97D1000C2030 /* SHA2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCD14281D7835ED00598003 /* SHA2Tests.swift */; };
+		DFB7E1441D8A97D2000C2030 /* SHA2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCD14281D7835ED00598003 /* SHA2Tests.swift */; };
+		DFB7E1451D8A9A73000C2030 /* SHA256.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7854831D7692F8004C506E /* SHA256.swift */; };
+		DFB7E1461D8A9A74000C2030 /* SHA256.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7854831D7692F8004C506E /* SHA256.swift */; };
+		DFB7E1471D8A9A74000C2030 /* SHA256.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7854831D7692F8004C506E /* SHA256.swift */; };
+		DFB7E14A1D8A9C36000C2030 /* SHA512.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0619AD1D78155500269CFC /* SHA512.swift */; };
+		DFB7E14B1D8A9C37000C2030 /* SHA512.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0619AD1D78155500269CFC /* SHA512.swift */; };
+		DFB7E14C1D8A9C37000C2030 /* SHA512.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0619AD1D78155500269CFC /* SHA512.swift */; };
+		DFB7E14D1D8A9CE0000C2030 /* SHA384.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCD14241D7833F300598003 /* SHA384.swift */; };
+		DFB7E14E1D8A9CE0000C2030 /* SHA384.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCD14241D7833F300598003 /* SHA384.swift */; };
+		DFB7E14F1D8A9CE3000C2030 /* SHA384.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCD14241D7833F300598003 /* SHA384.swift */; };
 		DFC943831D742A9500F2BCEF /* MD5Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC943821D742A9500F2BCEF /* MD5Tests.swift */; };
 		DFC943851D742A9500F2BCEF /* CryptoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFD16A3C1D72E67200ACDBC8 /* CryptoKit.framework */; };
 		DFC9438C1D742CAB00F2BCEF /* Data+HexString.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC9438B1D742CAB00F2BCEF /* Data+HexString.swift */; };
@@ -57,11 +62,6 @@
 		DFCBAE041D7E690A00B73CC4 /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCBAE031D7E690A00B73CC4 /* HMAC.swift */; };
 		DFCBAE051D7E690A00B73CC4 /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCBAE031D7E690A00B73CC4 /* HMAC.swift */; };
 		DFCBAE061D7E690A00B73CC4 /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCBAE031D7E690A00B73CC4 /* HMAC.swift */; };
-		DFCD14251D7833F300598003 /* SHA384.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCD14241D7833F300598003 /* SHA384.swift */; };
-		DFCD14261D7833F300598003 /* SHA384.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCD14241D7833F300598003 /* SHA384.swift */; };
-		DFCD14271D7833F300598003 /* SHA384.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCD14241D7833F300598003 /* SHA384.swift */; };
-		DFCD14291D7835ED00598003 /* SHA2VariantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCD14281D7835ED00598003 /* SHA2VariantTests.swift */; };
-		DFCD142A1D7835ED00598003 /* SHA2VariantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCD14281D7835ED00598003 /* SHA2VariantTests.swift */; };
 		DFD16A621D72E77300ACDBC8 /* CryptoKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DFD16A601D72E73300ACDBC8 /* CryptoKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DFD16A631D72E77400ACDBC8 /* CryptoKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DFD16A601D72E73300ACDBC8 /* CryptoKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DFD16A641D72E77400ACDBC8 /* CryptoKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DFD16A601D72E73300ACDBC8 /* CryptoKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -74,9 +74,6 @@
 		DFDEB6271D7348C300FEE448 /* Data+Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDEB6261D7348C300FEE448 /* Data+Int.swift */; };
 		DFDEB6281D7348C300FEE448 /* Data+Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDEB6261D7348C300FEE448 /* Data+Int.swift */; };
 		DFDEB6291D7348C300FEE448 /* Data+Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDEB6261D7348C300FEE448 /* Data+Int.swift */; };
-		DFFA34531D77E80400DC0204 /* SHA224.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFA34521D77E80400DC0204 /* SHA224.swift */; };
-		DFFA34541D77E80400DC0204 /* SHA224.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFA34521D77E80400DC0204 /* SHA224.swift */; };
-		DFFA34551D77E80400DC0204 /* SHA224.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFA34521D77E80400DC0204 /* SHA224.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,14 +97,13 @@
 		DF0619AD1D78155500269CFC /* SHA512.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHA512.swift; sourceTree = "<group>"; };
 		DF1521FD1D7449290068726D /* SHA1Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHA1Tests.swift; sourceTree = "<group>"; };
 		DF236CDF1D73F45F00EFF79B /* SHA1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHA1.swift; sourceTree = "<group>"; };
-		DF30F3701D768B9F00253128 /* HashPreprocessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HashPreprocessor.swift; sourceTree = "<group>"; };
-		DF3555971D7920D300DE56FD /* HashPreprocessor+HashAlgorithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HashPreprocessor+HashAlgorithm.swift"; sourceTree = "<group>"; };
 		DF7854831D7692F8004C506E /* SHA256.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = SHA256.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		DF8AC1AB1D76839C0042C68A /* HashAlgorithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HashAlgorithm.swift; sourceTree = "<group>"; };
 		DF9E5F771D77127F0048F90E /* ExpressibleByInt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpressibleByInt.swift; sourceTree = "<group>"; };
 		DF9E5F7B1D7713570048F90E /* ShiftOperations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShiftOperations.swift; sourceTree = "<group>"; };
 		DF9E5F7F1D7713B50048F90E /* RotateOperations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RotateOperations.swift; sourceTree = "<group>"; };
 		DFA61E761D74701100766CFB /* CryptoKit iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CryptoKit iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFB7E1331D8A591D000C2030 /* MerkleDamgardConstructor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MerkleDamgardConstructor.swift; sourceTree = "<group>"; };
 		DFBD2DE61D77D39500159A96 /* SHA2Variant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHA2Variant.swift; sourceTree = "<group>"; };
 		DFC943801D742A9500F2BCEF /* CryptoKit macOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CryptoKit macOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFC943821D742A9500F2BCEF /* MD5Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MD5Tests.swift; sourceTree = "<group>"; };
@@ -118,7 +114,7 @@
 		DFCBADFF1D7E63F000B73CC4 /* Data+HashFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+HashFunction.swift"; sourceTree = "<group>"; };
 		DFCBAE031D7E690A00B73CC4 /* HMAC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMAC.swift; sourceTree = "<group>"; };
 		DFCD14241D7833F300598003 /* SHA384.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHA384.swift; sourceTree = "<group>"; };
-		DFCD14281D7835ED00598003 /* SHA2VariantTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHA2VariantTests.swift; sourceTree = "<group>"; };
+		DFCD14281D7835ED00598003 /* SHA2Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHA2Tests.swift; sourceTree = "<group>"; };
 		DFD16A3C1D72E67200ACDBC8 /* CryptoKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CryptoKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFD16A4A1D72E68400ACDBC8 /* CryptoKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CryptoKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFD16A571D72E6B400ACDBC8 /* CryptoKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CryptoKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -183,8 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				DF8AC1AB1D76839C0042C68A /* HashAlgorithm.swift */,
-				DF30F3701D768B9F00253128 /* HashPreprocessor.swift */,
-				DF3555971D7920D300DE56FD /* HashPreprocessor+HashAlgorithm.swift */,
+				DFB7E1331D8A591D000C2030 /* MerkleDamgardConstructor.swift */,
 				DFCBADF71D7E630F00B73CC4 /* HashFunction.swift */,
 				DFCBADFB1D7E633700B73CC4 /* HashFunctionOptions.swift */,
 				DF7854821D768E79004C506E /* Implementations */,
@@ -206,11 +201,7 @@
 			children = (
 				DFD16A661D72EE7D00ACDBC8 /* MD5.swift */,
 				DF236CDF1D73F45F00EFF79B /* SHA1.swift */,
-				DFBD2DE61D77D39500159A96 /* SHA2Variant.swift */,
-				DFFA34521D77E80400DC0204 /* SHA224.swift */,
-				DF7854831D7692F8004C506E /* SHA256.swift */,
-				DFCD14241D7833F300598003 /* SHA384.swift */,
-				DF0619AD1D78155500269CFC /* SHA512.swift */,
+				DFB7E1501D8AA40A000C2030 /* SHA-2 */,
 			);
 			path = Implementations;
 			sourceTree = "<group>";
@@ -226,12 +217,24 @@
 			path = "Math Protocols";
 			sourceTree = "<group>";
 		};
+		DFB7E1501D8AA40A000C2030 /* SHA-2 */ = {
+			isa = PBXGroup;
+			children = (
+				DFBD2DE61D77D39500159A96 /* SHA2Variant.swift */,
+				DFFA34521D77E80400DC0204 /* SHA224.swift */,
+				DF7854831D7692F8004C506E /* SHA256.swift */,
+				DFCD14241D7833F300598003 /* SHA384.swift */,
+				DF0619AD1D78155500269CFC /* SHA512.swift */,
+			);
+			path = "SHA-2";
+			sourceTree = "<group>";
+		};
 		DFC943811D742A9500F2BCEF /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				DFC943821D742A9500F2BCEF /* MD5Tests.swift */,
 				DF1521FD1D7449290068726D /* SHA1Tests.swift */,
-				DFCD14281D7835ED00598003 /* SHA2VariantTests.swift */,
+				DFCD14281D7835ED00598003 /* SHA2Tests.swift */,
 				DFC9438B1D742CAB00F2BCEF /* Data+HexString.swift */,
 				DFC943841D742A9500F2BCEF /* Info.plist */,
 			);
@@ -498,10 +501,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFCD142A1D7835ED00598003 /* SHA2VariantTests.swift in Sources */,
 				DFA61E841D74713300766CFB /* Data+HexString.swift in Sources */,
-				DFA61E831D74713300766CFB /* SHA1Tests.swift in Sources */,
 				DFA61E821D74713300766CFB /* MD5Tests.swift in Sources */,
+				DFB7E13B1D8A9474000C2030 /* SHA1Tests.swift in Sources */,
+				DFB7E1441D8A97D2000C2030 /* SHA2Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,10 +512,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFCD14291D7835ED00598003 /* SHA2VariantTests.swift in Sources */,
 				DFC9438C1D742CAB00F2BCEF /* Data+HexString.swift in Sources */,
 				DFC943831D742A9500F2BCEF /* MD5Tests.swift in Sources */,
-				DF1521FE1D7449290068726D /* SHA1Tests.swift in Sources */,
+				DFB7E1431D8A97D1000C2030 /* SHA2Tests.swift in Sources */,
+				DFB7E13A1D8A9474000C2030 /* SHA1Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,24 +523,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFB7E14D1D8A9CE0000C2030 /* SHA384.swift in Sources */,
+				DFB7E1451D8A9A73000C2030 /* SHA256.swift in Sources */,
 				DF9E5F7C1D7713570048F90E /* ShiftOperations.swift in Sources */,
 				DF9E5F781D77127F0048F90E /* ExpressibleByInt.swift in Sources */,
-				DFCD14251D7833F300598003 /* SHA384.swift in Sources */,
 				DF8AC1AC1D76839C0042C68A /* HashAlgorithm.swift in Sources */,
+				DFB7E13C1D8A958F000C2030 /* SHA2Variant.swift in Sources */,
 				DFCBAE041D7E690A00B73CC4 /* HMAC.swift in Sources */,
 				DFD16A671D72EE7D00ACDBC8 /* MD5.swift in Sources */,
 				DFD79BC81D77DC07006B82DC /* EndianRepresentable.swift in Sources */,
-				DF7854841D7692F8004C506E /* SHA256.swift in Sources */,
+				DFB7E1341D8A591D000C2030 /* MerkleDamgardConstructor.swift in Sources */,
+				DFB7E14A1D8A9C36000C2030 /* SHA512.swift in Sources */,
 				DFCBAE001D7E63F000B73CC4 /* Data+HashFunction.swift in Sources */,
 				DF9E5F801D7713B50048F90E /* RotateOperations.swift in Sources */,
+				DFB7E1371D8A8D5E000C2030 /* SHA1.swift in Sources */,
 				DFCBADFC1D7E633700B73CC4 /* HashFunctionOptions.swift in Sources */,
-				DF0619AE1D78155500269CFC /* SHA512.swift in Sources */,
-				DFFA34531D77E80400DC0204 /* SHA224.swift in Sources */,
-				DF236CE01D73F45F00EFF79B /* SHA1.swift in Sources */,
+				DFB7E13F1D8A9706000C2030 /* SHA224.swift in Sources */,
 				DFDEB6271D7348C300FEE448 /* Data+Int.swift in Sources */,
-				DF3555981D7920D300DE56FD /* HashPreprocessor+HashAlgorithm.swift in Sources */,
-				DF30F3711D768B9F00253128 /* HashPreprocessor.swift in Sources */,
-				DFBD2DE71D77D39500159A96 /* SHA2Variant.swift in Sources */,
 				DFCBADF81D7E630F00B73CC4 /* HashFunction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -546,24 +548,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFB7E14E1D8A9CE0000C2030 /* SHA384.swift in Sources */,
+				DFB7E1461D8A9A74000C2030 /* SHA256.swift in Sources */,
 				DF9E5F7D1D7713570048F90E /* ShiftOperations.swift in Sources */,
 				DF9E5F791D77127F0048F90E /* ExpressibleByInt.swift in Sources */,
-				DFCD14261D7833F300598003 /* SHA384.swift in Sources */,
 				DF8AC1AD1D76839C0042C68A /* HashAlgorithm.swift in Sources */,
+				DFB7E13D1D8A9590000C2030 /* SHA2Variant.swift in Sources */,
 				DFCBAE051D7E690A00B73CC4 /* HMAC.swift in Sources */,
 				DFD16A681D72EE7D00ACDBC8 /* MD5.swift in Sources */,
 				DFD79BC91D77DC07006B82DC /* EndianRepresentable.swift in Sources */,
-				DF7854851D7692F8004C506E /* SHA256.swift in Sources */,
+				DFB7E1351D8A591D000C2030 /* MerkleDamgardConstructor.swift in Sources */,
+				DFB7E14B1D8A9C37000C2030 /* SHA512.swift in Sources */,
 				DFCBAE011D7E63F000B73CC4 /* Data+HashFunction.swift in Sources */,
 				DF9E5F811D7713B50048F90E /* RotateOperations.swift in Sources */,
+				DFB7E1381D8A8D5E000C2030 /* SHA1.swift in Sources */,
 				DFCBADFD1D7E633700B73CC4 /* HashFunctionOptions.swift in Sources */,
-				DF0619AF1D78155500269CFC /* SHA512.swift in Sources */,
-				DFFA34541D77E80400DC0204 /* SHA224.swift in Sources */,
-				DF236CE11D73F45F00EFF79B /* SHA1.swift in Sources */,
+				DFB7E1401D8A9706000C2030 /* SHA224.swift in Sources */,
 				DFDEB6281D7348C300FEE448 /* Data+Int.swift in Sources */,
-				DF3555991D7920D300DE56FD /* HashPreprocessor+HashAlgorithm.swift in Sources */,
-				DF30F3721D768B9F00253128 /* HashPreprocessor.swift in Sources */,
-				DFBD2DE81D77D39500159A96 /* SHA2Variant.swift in Sources */,
 				DFCBADF91D7E630F00B73CC4 /* HashFunction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -572,24 +573,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFB7E14F1D8A9CE3000C2030 /* SHA384.swift in Sources */,
+				DFB7E1471D8A9A74000C2030 /* SHA256.swift in Sources */,
 				DF9E5F7E1D7713570048F90E /* ShiftOperations.swift in Sources */,
 				DF9E5F7A1D77127F0048F90E /* ExpressibleByInt.swift in Sources */,
-				DFCD14271D7833F300598003 /* SHA384.swift in Sources */,
 				DF8AC1AE1D76839C0042C68A /* HashAlgorithm.swift in Sources */,
+				DFB7E13E1D8A9591000C2030 /* SHA2Variant.swift in Sources */,
 				DFCBAE061D7E690A00B73CC4 /* HMAC.swift in Sources */,
 				DFD16A691D72EE7D00ACDBC8 /* MD5.swift in Sources */,
 				DFD79BCA1D77DC07006B82DC /* EndianRepresentable.swift in Sources */,
-				DF7854861D7692F8004C506E /* SHA256.swift in Sources */,
+				DFB7E1361D8A591D000C2030 /* MerkleDamgardConstructor.swift in Sources */,
+				DFB7E14C1D8A9C37000C2030 /* SHA512.swift in Sources */,
 				DFCBAE021D7E63F000B73CC4 /* Data+HashFunction.swift in Sources */,
 				DF9E5F821D7713B50048F90E /* RotateOperations.swift in Sources */,
+				DFB7E1391D8A8D5F000C2030 /* SHA1.swift in Sources */,
 				DFCBADFE1D7E633700B73CC4 /* HashFunctionOptions.swift in Sources */,
-				DF0619B01D78155500269CFC /* SHA512.swift in Sources */,
-				DFFA34551D77E80400DC0204 /* SHA224.swift in Sources */,
-				DF236CE21D73F45F00EFF79B /* SHA1.swift in Sources */,
+				DFB7E1411D8A9707000C2030 /* SHA224.swift in Sources */,
 				DFDEB6291D7348C300FEE448 /* Data+Int.swift in Sources */,
-				DF35559A1D7920D300DE56FD /* HashPreprocessor+HashAlgorithm.swift in Sources */,
-				DF30F3731D768B9F00253128 /* HashPreprocessor.swift in Sources */,
-				DFBD2DE91D77D39500159A96 /* SHA2Variant.swift in Sources */,
 				DFCBADFA1D7E630F00B73CC4 /* HashFunction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,28 +8,38 @@
 
 import Foundation
 
-public enum SHA1: HashAlgorithm, HashPreprocessor {
+public enum SHA1: HashAlgorithm {
+    public static var outputSize: UInt {
+        return 16
+    }
+    public static var blockSize: UInt {
+        return 64
+    }
+}
+
+extension SHA1: MerkleDamgardConstructor {
     public static var endianess: Endianess {
         return .bigEndian
     }
     
-    public static func digest(_ message: Data) -> Data {
-        // Create mutable copy of message
-        let messageCopy = self.preprocess(message: message)
-        
-        // Initialize variables
-        var a0: UInt32 = 0x67452301
-        var b0: UInt32 = 0xefcdab89
-        var c0: UInt32 = 0x98badcfe
-        var d0: UInt32 = 0x10325476
-        var e0: UInt32 = 0xc3d2e1f0
+    public static var initializationVector: [UInt32] {
+        return [0x67452301, 0xefcdab89, 0x98badcfe, 0x10325476, 0xc3d2e1f0]
+    }
+    
+    public static var rounds: UInt {
+        return 80
+    }
+    
+    public static func compress(_ data: Data) -> [UInt32] {
+        // Initialize hash value
+        var h = self.initializationVector
         
         // Divide into 512-bit (64-byte) chunks
         // Since data length is 0 bytes (mod 64), all chunks are 64 bytes
         let chunkLength = 64
-        for index in stride(from: messageCopy.startIndex, to: messageCopy.endIndex, by: chunkLength) {
+        for index in stride(from: data.startIndex, to: data.endIndex, by: chunkLength) {
             // Get 512-bit chunk
-            let chunk = messageCopy.subdata(in: index ..< index + chunkLength)
+            let chunk = data.subdata(in: index ..< index + chunkLength)
             
             // Divide chunk into 32-bit words (512 is divisible by 32, thus all words are 32 bits)
             // Since 512 is divisible by 32, simply create array by converting the Data pointer to a UInt32 array pointer
@@ -46,14 +56,14 @@ public enum SHA1: HashAlgorithm, HashPreprocessor {
             }
             
             // Initialize hash value for this chunk
-            var A = a0
-            var B = b0
-            var C = c0
-            var D = d0
-            var E = e0
+            var A = h[0]
+            var B = h[1]
+            var C = h[2]
+            var D = h[3]
+            var E = h[4]
             
             // Main loop
-            for i in 0..<80 {
+            for i in 0 ..< Int(self.rounds) {
                 let round = i / 20
                 
                 let F: UInt32
@@ -62,16 +72,16 @@ public enum SHA1: HashAlgorithm, HashPreprocessor {
                 switch round {
                 case 0:
                     F = (B & C) | ((~B) & D)
-                    k = 0x5A827999
+                    k = 0x5a827999
                 case 1:
                     F = B ^ C ^ D
-                    k = 0x6ED9EBA1
+                    k = 0x6ed9eba1
                 case 2:
                     F = (B & C) | (B & D) | (C & D)
-                    k = 0x8F1BBCDC
+                    k = 0x8f1bbcdc
                 case 3:
                     F = B ^ C ^ D
-                    k = 0xCA62C1D6
+                    k = 0xca62c1d6
                 default:
                     F = 0
                     k = 0
@@ -86,14 +96,13 @@ public enum SHA1: HashAlgorithm, HashPreprocessor {
             }
             
             // Add current chunk's hash to result (allow overflow)
-            a0 = a0 &+ A
-            b0 = b0 &+ B
-            c0 = c0 &+ C
-            d0 = d0 &+ D
-            e0 = e0 &+ E
+            let currentHash = [A, B, C, D, E]
+            
+            for i in 0..<h.count {
+                h[i] = h[i] &+ currentHash[i]
+            }
         }
         
-        return Data(from: a0.bigEndian) + Data(from: b0.bigEndian) + Data(from: c0.bigEndian)
-            + Data(from: d0.bigEndian) + Data(from: e0.bigEndian)
+        return h
     }
 }

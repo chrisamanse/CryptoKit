@@ -9,11 +9,15 @@
 import Foundation
 
 public enum SHA512: SHA2Variant {
-    public static var endianess: Endianess {
-        return .bigEndian
+    public static var outputSize: UInt {
+        return 64
     }
     
-    public static var initialHashValues: [UInt64] {
+    public static var blockSize: UInt {
+        return 128
+    }
+    
+    public static var initializationVector: [UInt64] {
         return [
             0x6a09e667f3bcc908, 0xbb67ae8584caa73b, 0x3c6ef372fe94f82b, 0xa54ff53a5f1d36f1,
             0x510e527fade682d1, 0x9b05688c2b3e6c1f, 0x1f83d9abfb41bd6b, 0x5be0cd19137e2179

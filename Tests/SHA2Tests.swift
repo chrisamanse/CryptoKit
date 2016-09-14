@@ -1,5 +1,5 @@
 //
-//  SHA2VariantTests.swift
+//  SHA2Tests.swift
 //  CryptoKit
 //
 //  Created by Chris Amanse on 01/09/2016.
@@ -9,7 +9,7 @@
 import XCTest
 @testable import CryptoKit
 
-class SHA2VariantTests: XCTestCase {
+class SHA2Tests: XCTestCase {
     let testStrings = [
         "abc",
         "abcdbcdecdefdefgefghfghighijhijkijkljklmklmnlmnomnopnopq",
@@ -36,7 +36,6 @@ class SHA2VariantTests: XCTestCase {
         XCTAssertEqual(testStrings[2].sha2Hash(.sha224), sha224Results[2])
         XCTAssertEqual(testStrings[3].sha2Hash(.sha224), sha224Results[3])
     }
-    
     func testSHA256() {
         // SHA256
         let sha256Results = testResults(for: .sha256)
