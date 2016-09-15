@@ -187,6 +187,17 @@
 			path = "Hash Algorithms";
 			sourceTree = "<group>";
 		};
+		DF6C1B231D8AB4C70057B1BC /* CryptoKit */ = {
+			isa = PBXGroup;
+			children = (
+				DF35559B1D7923F800DE56FD /* Authentication */,
+				DF658B1E1D7409310026FCBA /* Hash Algorithms */,
+				DF74E9AD1D73DE6200B8D700 /* Data Extensions */,
+				DF9E5F761D77111E0048F90E /* Math Protocols */,
+			);
+			path = CryptoKit;
+			sourceTree = "<group>";
+		};
 		DF74E9AD1D73DE6200B8D700 /* Data Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -265,10 +276,7 @@
 		DFD16A5F1D72E73300ACDBC8 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				DF35559B1D7923F800DE56FD /* Authentication */,
-				DF658B1E1D7409310026FCBA /* Hash Algorithms */,
-				DF74E9AD1D73DE6200B8D700 /* Data Extensions */,
-				DF9E5F761D77111E0048F90E /* Math Protocols */,
+				DF6C1B231D8AB4C70057B1BC /* CryptoKit */,
 				DFD16A651D72EA3700ACDBC8 /* Supporting Files */,
 			);
 			path = Sources;
