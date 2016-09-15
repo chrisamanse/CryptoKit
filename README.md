@@ -1,6 +1,7 @@
 # CryptoKit 🔑
 [![Build Status](https://travis-ci.org/chrisamanse/CryptoKit.svg?branch=master)](https://travis-ci.org/chrisamanse/CryptoKit)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![spm compatible](https://img.shields.io/badge/spm-compatible-4BC51D.svg?style=flat)](https://github.com/apple/swift-package-manager)
 [![CocoaPods compatible](https://img.shields.io/cocoapods/v/CryptoKit.svg)](https://github.com/CocoaPods/CocoaPods)
 [![Platform](https://img.shields.io/cocoapods/p/CryptoKit.svg)](http://cocoadocs.org/docsets/CryptoKit)
 
