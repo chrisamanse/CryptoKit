@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "CryptoKit"
-  s.version      = "0.3.2"
+  s.version      = "0.3.3"
   s.summary      = "Pure Swift implementations of cryptographic functions"
   s.description  = <<-DESC
                     CryptoKit is a Swift framework containing implementations of cryptographic functions.
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = "10.11"
   s.watchos.deployment_target = "2.0"
   
-  s.source       = { :git => "https://github.com/chrisamanse/CryptoKit.git", :tag => "v#{s.version}" }
+  s.source       = { :git => "https://github.com/chrisamanse/CryptoKit.git", :tag => "#{s.version}" }
   
   s.source_files  = "Sources", "Sources/**/*.{h,swift}"
   
