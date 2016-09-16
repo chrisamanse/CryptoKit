@@ -41,6 +41,6 @@ class SHA1Tests: XCTestCase {
 
 extension String {
     func sha1() -> Data {
-        return self.data(using: .utf8)!.digest(using: .sha1)
+        return (self.data(using: .utf8) ?? Data()).digest(using: .sha1)
     }
 }

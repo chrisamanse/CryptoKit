@@ -47,6 +47,6 @@ class MD5Tests: XCTestCase {
 
 extension String {
     func md5() -> Data {
-        return self.data(using: .utf8)!.digest(using: .md5)
+        return (self.data(using: .utf8) ?? Data()).digest(using: .md5)
     }
 }

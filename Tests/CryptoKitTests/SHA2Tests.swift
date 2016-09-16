@@ -113,7 +113,7 @@ fileprivate enum SHA2Variants {
 
 fileprivate extension String {
     func sha2Hash(_ variant: SHA2Variants) -> String {
-        let data = self.data(using: .utf8)!
+        let data = self.data(using: .utf8) ?? Data()
         let hashData: Data = {
             switch variant {
             case .sha224: return data.digest(using: .sha224)
