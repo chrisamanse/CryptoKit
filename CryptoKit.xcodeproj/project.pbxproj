@@ -65,6 +65,7 @@
 		DF623FA71D8BA5CA0067156C /* MD5Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MD5Tests.swift; sourceTree = "<group>"; };
 		DF623FA81D8BA5CA0067156C /* SHA1Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHA1Tests.swift; sourceTree = "<group>"; };
 		DF623FA91D8BA5CA0067156C /* SHA2Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHA2Tests.swift; sourceTree = "<group>"; };
+		DF623FAE1D8BB1210067156C /* CryptoKit.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CryptoKit.playground; sourceTree = "<group>"; };
 		__PBXFileRef_CryptoKit.xcodeproj/Configs/Project.xcconfig /* CryptoKit.xcodeproj/Configs/Project.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = CryptoKit.xcodeproj/Configs/Project.xcconfig; sourceTree = "<group>"; };
 		__PBXFileRef_Package.swift /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		"_____Product_CryptoKit" /* CryptoKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CryptoKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -163,6 +164,7 @@
 		"___RootGroup_" = {
 			isa = PBXGroup;
 			children = (
+				DF623FAE1D8BB1210067156C /* CryptoKit.playground */,
 				__PBXFileRef_Package.swift /* Package.swift */,
 				"_____Configs_" /* Configs */,
 				"_____Sources_" /* Sources */,

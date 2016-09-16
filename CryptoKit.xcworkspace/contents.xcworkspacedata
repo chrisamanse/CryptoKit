@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:CryptoKit.playground">
-   </FileRef>
-   <FileRef
       location = "container:CryptoKit.xcodeproj">
    </FileRef>
    <Group
