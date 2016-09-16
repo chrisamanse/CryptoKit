@@ -1,15 +1,11 @@
-language: objective-c
-xcode_workspace: CryptoKit.xcworkspace
+os:
+  - linux
+  - osx
+language: generic
+sudo: required
+dist: trusty
 osx_image: xcode8
-
-env:
-  - DESTINATION="arch=x86_64"                    SCHEME="CryptoKit macOS" SDK="macosx10.12"         RUN_TESTS="YES"
-  - DESTINATION="OS=10.0,name=iPhone SE"         SCHEME="CryptoKit iOS"   SDK="iphonesimulator10.0" RUN_TESTS="YES"
-  - DESTINATION="OS=3.0,name=Apple Watch - 42mm" SCHEME="CryptoKit watchOS" SDK="watchsimulator3.0" RUN_TESTS="NO"
-
+install:
+  - eval "$(curl -sL https://gist.githubusercontent.com/kylef/5c0475ff02b7c7671d2a/raw/9f442512a46d7a2af7b850d65a7e9bd31edfb09b/swiftenv-install.sh)"
 script:
-  - if [ $RUN_TESTS == "YES" ]; then
-      xcodebuild -project CryptoKit.xcodeproj -scheme "$SCHEME" -sdk "$SDK" -destination "$DESTINATION" -configuration Debug ONLY_ACTIVE_ARCH=NO ENABLE_TESTABILITY=YES test | xcpretty -c;
-    else
-      xcodebuild -project CryptoKit.xcodeproj -scheme "$SCHEME" -sdk "$SDK" -destination "$DESTINATION" -configuration Debug ONLY_ACTIVE_ARCH=NO build | xcpretty -c;
-    fi
+  - swift test
