@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "CryptoKit"
-  s.version      = "0.3.1"
+  s.version      = "0.3.2"
   s.summary      = "Pure Swift implementations of cryptographic functions"
   s.description  = <<-DESC
                     CryptoKit is a Swift framework containing implementations of cryptographic functions.
