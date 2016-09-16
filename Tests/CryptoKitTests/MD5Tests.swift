@@ -35,7 +35,12 @@ class MD5Tests: XCTestCase {
                        "d174ab98d277d9f5a5611c2c9f419d9f")
         XCTAssertEqual("12345678901234567890123456789012345678901234567890123456789012345678901234567890".md5().hexString,
                        "57edf4a22be3c955ac49da2e2107b67a")
-        
+    }
+    
+    static var allTests : [(String, (MD5Tests) -> () throws -> Void)] {
+        return [
+            ("testMD5", testMD5),
+        ]
     }
 }
 

@@ -29,7 +29,12 @@ class SHA1Tests: XCTestCase {
         XCTAssertEqual("a".sha1().hexString, "86f7e437faa5a7fce15d1ddcb9eaeaea377667b8")
         XCTAssertEqual("0123456701234567012345670123456701234567012345670123456701234567".sha1().hexString,
                        "e0c094e867ef46c350ef54a7f59dd60bed92ae83")
-        
+    }
+    
+    static var allTests : [(String, (SHA1Tests) -> () throws -> Void)] {
+        return [
+            ("testSHA1", testSHA1),
+        ]
     }
 }
 

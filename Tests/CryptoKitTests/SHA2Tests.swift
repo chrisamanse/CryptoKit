@@ -92,6 +92,15 @@ class SHA2Tests: XCTestCase {
         
         return results
     }
+    
+    static var allTests : [(String, (SHA2Tests) -> () throws -> Void)] {
+        return [
+            ("testSHA224", testSHA224),
+            ("testSHA256", testSHA256),
+            ("testSHA384", testSHA384),
+            ("testSHA512", testSHA512)
+        ]
+    }
 }
 
 fileprivate enum SHA2Variants {

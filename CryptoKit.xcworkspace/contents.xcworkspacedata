@@ -11,7 +11,13 @@
       location = "container:"
       name = "Metadata">
       <FileRef
+         location = "group:.swift-version">
+      </FileRef>
+      <FileRef
          location = "group:.travis.yml">
+      </FileRef>
+      <FileRef
+         location = "group:CryptoKit.podspec">
       </FileRef>
       <FileRef
          location = "group:LICENSE">
