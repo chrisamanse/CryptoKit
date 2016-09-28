@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF4417D91D9BB61F0024FBFA /* HashFunctionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4417D81D9BB61F0024FBFA /* HashFunctionTests.swift */; };
 		DF623F941D8B9DD90067156C /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF623F7D1D8B9DD90067156C /* HMAC.swift */; };
 		DF623F951D8B9DD90067156C /* Data+HashFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF623F7F1D8B9DD90067156C /* Data+HashFunction.swift */; };
 		DF623F961D8B9DD90067156C /* Data+Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF623F801D8B9DD90067156C /* Data+Int.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DF4417D81D9BB61F0024FBFA /* HashFunctionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HashFunctionTests.swift; sourceTree = "<group>"; };
 		DF623F7D1D8B9DD90067156C /* HMAC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMAC.swift; sourceTree = "<group>"; };
 		DF623F7F1D8B9DD90067156C /* Data+HashFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+HashFunction.swift"; sourceTree = "<group>"; };
 		DF623F801D8B9DD90067156C /* Data+Int.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Int.swift"; sourceTree = "<group>"; };
@@ -214,6 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				DF623FA61D8BA5CA0067156C /* Data+HexString.swift */,
+				DF4417D81D9BB61F0024FBFA /* HashFunctionTests.swift */,
 				DF623FA71D8BA5CA0067156C /* MD5Tests.swift */,
 				DF623FA81D8BA5CA0067156C /* SHA1Tests.swift */,
 				DF623FA91D8BA5CA0067156C /* SHA2Tests.swift */,
@@ -324,6 +327,7 @@
 			files = (
 				DF623FAA1D8BA5CA0067156C /* Data+HexString.swift in Sources */,
 				DF623FAB1D8BA5CA0067156C /* MD5Tests.swift in Sources */,
+				DF4417D91D9BB61F0024FBFA /* HashFunctionTests.swift in Sources */,
 				DF623FAC1D8BA5CA0067156C /* SHA1Tests.swift in Sources */,
 				DF623FAD1D8BA5CA0067156C /* SHA2Tests.swift in Sources */,
 			);
