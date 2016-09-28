@@ -11,7 +11,7 @@ import Foundation
 /// A `HashFunction` contains a `HashAlgorithm.Type`, which is then used for calculating the hash of a message.
 public struct HashFunction {
     /// The type of hash alorithm to use for calculating the hash of a message.
-    var algorithm: HashAlgorithm.Type
+    public var algorithm: HashAlgorithm.Type
     
     /// Calculates the hash/digest of a message.
     /// - parameters:
@@ -26,6 +26,12 @@ public struct HashFunction {
     ///   - algorithm: The algorithm to be used for calculating the hash of a message.
     public init(_ algorithm: HashAlgorithm.Type) {
         self.algorithm = algorithm
+    }
+}
+
+extension HashFunction: Equatable {
+    public static func ==(lhs: HashFunction, rhs: HashFunction) -> Bool {
+        return lhs.algorithm == rhs.algorithm
     }
 }
 
