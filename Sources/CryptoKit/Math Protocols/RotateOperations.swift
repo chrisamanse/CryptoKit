@@ -27,7 +27,7 @@ extension Int64: RotateOperations {}
 extension UInt: RotateOperations {}
 extension Int: RotateOperations {}
 
-public extension RotateOperations where Self: ShiftOperations & BitwiseOperations & ExpressibleByInt & IntegerArithmetic {
+public extension RotateOperations where Self: ShiftOperations & FixedWidthInteger & ExpressibleByInt & IntegerArithmetic {
     public static func <<<(lhs: Self, rhs: Self) -> Self {
         guard rhs != Self(0) else {
             return lhs

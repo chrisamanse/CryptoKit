@@ -8,7 +8,7 @@
 
 import Foundation
 
-public protocol SHA2Variant: HashAlgorithm, MerkleDamgardConstructor {
+public protocol SHA2Variant: MerkleDamgardConstructor {
     static var kConstants: [Self.BaseUnit] { get }
     
     static var s0ShiftAndRotateAmounts: (BaseUnit, BaseUnit, BaseUnit) { get }

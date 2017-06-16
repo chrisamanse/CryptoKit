@@ -14,7 +14,7 @@ public enum Endianess {
 }
 
 public protocol MerkleDamgardConstructor: HashAlgorithm {
-    associatedtype BaseUnit: UnsignedInteger, BitwiseOperations, ShiftOperations,
+    associatedtype BaseUnit: UnsignedInteger, FixedWidthInteger, ShiftOperations,
         RotateOperations, ExpressibleByInt, EndianRepresentable
     
     static var endianess: Endianess { get }
