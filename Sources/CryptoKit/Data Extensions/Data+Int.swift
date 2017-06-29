@@ -9,7 +9,8 @@
 import Foundation
 
 extension Data {
-    init<T: Integer>(from value: T) {
+    /// [Swift 4.0] Integer protocol was removed. Use BinaryInteger insted. 
+    init<T: BinaryInteger>(from value: T) {
         // Allocate a value pointer (and make sure it's always deallocated at end of scope
         let valuePointer = UnsafeMutablePointer<T>.allocate(capacity: 1)
         defer {
