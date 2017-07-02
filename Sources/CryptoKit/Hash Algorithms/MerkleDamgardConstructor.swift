@@ -14,9 +14,7 @@ public enum Endianess {
 }
 
 public protocol MerkleDamgardConstructor: HashAlgorithm {
-    /// [Swift 4.0] BitwiseOperations protocol is deprecated. Use FixedWidthInteger insted.
-    associatedtype BaseUnit: UnsignedInteger, FixedWidthInteger, ShiftOperations,
-        RotateOperations, ExpressibleByInt, EndianRepresentable
+    associatedtype BaseUnit: UnsignedInteger, FixedWidthInteger
     
     static var endianess: Endianess { get }
     

@@ -27,8 +27,7 @@ extension Int64: RotateOperations {}
 extension UInt: RotateOperations {}
 extension Int: RotateOperations {}
 
-/// [Swift 4.0] BitwiseOperations protocol is deprecated. Use FixedWidthInteger insted.
-public extension RotateOperations where Self: ShiftOperations & FixedWidthInteger & ExpressibleByInt & Numeric {
+public extension RotateOperations where Self: FixedWidthInteger {
     public static func <<<(lhs: Self, rhs: Self) -> Self {
         guard rhs != Self(0) else {
             return lhs
