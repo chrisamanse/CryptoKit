@@ -10,7 +10,6 @@ import Foundation
 
 extension Data {
     init<T: FixedWidthInteger>(from value: T) {
-        // Allocate a value pointer (and make sure it's always deallocated at end of scope
         let valuePointer = UnsafeMutablePointer<T>.allocate(capacity: 1)
         defer {
             valuePointer.deallocate(capacity: 1)
