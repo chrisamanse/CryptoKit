@@ -18,7 +18,7 @@ public protocol SHA2Variant: MerkleDamgardConstructor {
     static var S1ShiftAndRotateAmounts: (BaseUnit, BaseUnit, BaseUnit) { get }
 }
 
-public extension SHA2Variant where Self.BaseUnit: RotateOperations {
+public extension SHA2Variant {
     public static var endianess: Endianess {
         return .bigEndian
     }
