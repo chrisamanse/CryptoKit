@@ -32,7 +32,6 @@ class BitRotationTests: XCTestCase {
         XCTAssertEqual(five <<< 1, 0b0000_1010)
         XCTAssertEqual(five >>> 6, 0b0001_0100)
         XCTAssertEqual(five <<< 6, 0b0100_0001)
-        
     }
     
     static var allTests : [(String, (BitRotationTests) -> () throws -> Void)] {
