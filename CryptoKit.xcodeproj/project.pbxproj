@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF06D40A1F0D24B700E9113D /* MD5Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF06D4091F0D24B700E9113D /* MD5Tests.swift */; };
 		DF1B1C601F0A850F0097CE2F /* FixedWidthInteger+Rotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1B1C5F1F0A850F0097CE2F /* FixedWidthInteger+Rotation.swift */; };
 		DF1B1C631F0A86840097CE2F /* BitRotationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1B1C611F0A85FE0097CE2F /* BitRotationTests.swift */; };
 		DF623FAA1D8BA5CA0067156C /* Data+HexString.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF623FA61D8BA5CA0067156C /* Data+HexString.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DF06D4091F0D24B700E9113D /* MD5Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MD5Tests.swift; sourceTree = "<group>"; };
 		DF1B1C5F1F0A850F0097CE2F /* FixedWidthInteger+Rotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FixedWidthInteger+Rotation.swift"; sourceTree = "<group>"; };
 		DF1B1C611F0A85FE0097CE2F /* BitRotationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitRotationTests.swift; sourceTree = "<group>"; };
 		DF623FA61D8BA5CA0067156C /* Data+HexString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+HexString.swift"; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 			children = (
 				DF623FA61D8BA5CA0067156C /* Data+HexString.swift */,
 				DF1B1C611F0A85FE0097CE2F /* BitRotationTests.swift */,
+				DF06D4091F0D24B700E9113D /* MD5Tests.swift */,
 			);
 			name = CryptoKitTests;
 			path = Tests/CryptoKitTests;
@@ -217,6 +220,7 @@
 			buildActionMask = 0;
 			files = (
 				DF623FAA1D8BA5CA0067156C /* Data+HexString.swift in Sources */,
+				DF06D40A1F0D24B700E9113D /* MD5Tests.swift in Sources */,
 				DF1B1C631F0A86840097CE2F /* BitRotationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
