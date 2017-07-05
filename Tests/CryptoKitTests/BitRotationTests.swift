@@ -1,6 +1,6 @@
 //
 //  BitRotationTests.swift
-//  CryptoKit
+//  CryptoKitTests
 //
 //  Created by Chris Amanse on 7/3/17.
 //

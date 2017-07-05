@@ -1,6 +1,6 @@
 //
 //  Data+HexString.swift
-//  CryptoKit
+//  CryptoKitTests
 //
 //  Created by Chris Amanse on 29/08/2016.
 //
