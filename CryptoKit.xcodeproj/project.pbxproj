@@ -10,6 +10,7 @@
 		DF06D40A1F0D24B700E9113D /* MD5Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF06D4091F0D24B700E9113D /* MD5Tests.swift */; };
 		DF1B1C601F0A850F0097CE2F /* FixedWidthInteger+Rotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1B1C5F1F0A850F0097CE2F /* FixedWidthInteger+Rotation.swift */; };
 		DF1B1C631F0A86840097CE2F /* BitRotationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1B1C611F0A85FE0097CE2F /* BitRotationTests.swift */; };
+		DF5688431F0D292700447990 /* MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5688421F0D292700447990 /* MD5.swift */; };
 		DF623FAA1D8BA5CA0067156C /* Data+HexString.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF623FA61D8BA5CA0067156C /* Data+HexString.swift */; };
 		_LinkFileRef_CryptoKit_via_CryptoKitTests /* CryptoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_CryptoKit" /* CryptoKit.framework */; };
 /* End PBXBuildFile section */
@@ -28,6 +29,7 @@
 		DF06D4091F0D24B700E9113D /* MD5Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MD5Tests.swift; sourceTree = "<group>"; };
 		DF1B1C5F1F0A850F0097CE2F /* FixedWidthInteger+Rotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FixedWidthInteger+Rotation.swift"; sourceTree = "<group>"; };
 		DF1B1C611F0A85FE0097CE2F /* BitRotationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitRotationTests.swift; sourceTree = "<group>"; };
+		DF5688421F0D292700447990 /* MD5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MD5.swift; sourceTree = "<group>"; };
 		DF623FA61D8BA5CA0067156C /* Data+HexString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+HexString.swift"; sourceTree = "<group>"; };
 		DF623FAE1D8BB1210067156C /* CryptoKit.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CryptoKit.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		__PBXFileRef_CryptoKit.xcodeproj/Configs/Project.xcconfig /* CryptoKit.xcodeproj/Configs/Project.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = CryptoKit.xcodeproj/Configs/Project.xcconfig; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				DF623F8F1D8B9DD90067156C /* Math Protocols */,
+				DF5688421F0D292700447990 /* MD5.swift */,
 			);
 			name = CryptoKit;
 			path = Sources/CryptoKit;
@@ -211,6 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				DF5688431F0D292700447990 /* MD5.swift in Sources */,
 				DF1B1C601F0A850F0097CE2F /* FixedWidthInteger+Rotation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
