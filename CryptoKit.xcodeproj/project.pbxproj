@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF1B1C601F0A850F0097CE2F /* FixedWidthInteger+Rotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1B1C5F1F0A850F0097CE2F /* FixedWidthInteger+Rotation.swift */; };
+		DF1B1C631F0A86840097CE2F /* BitRotationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1B1C611F0A85FE0097CE2F /* BitRotationTests.swift */; };
 		DF4417D91D9BB61F0024FBFA /* HashFunctionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4417D81D9BB61F0024FBFA /* HashFunctionTests.swift */; };
 		DF623F941D8B9DD90067156C /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF623F7D1D8B9DD90067156C /* HMAC.swift */; };
 		DF623F951D8B9DD90067156C /* Data+HashFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF623F7F1D8B9DD90067156C /* Data+HashFunction.swift */; };
@@ -22,10 +24,6 @@
 		DF623F9F1D8B9DD90067156C /* SHA512.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF623F8C1D8B9DD90067156C /* SHA512.swift */; };
 		DF623FA01D8B9DD90067156C /* SHA1.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF623F8D1D8B9DD90067156C /* SHA1.swift */; };
 		DF623FA11D8B9DD90067156C /* MerkleDamgardConstructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF623F8E1D8B9DD90067156C /* MerkleDamgardConstructor.swift */; };
-		DF623FA21D8B9DD90067156C /* EndianRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF623F901D8B9DD90067156C /* EndianRepresentable.swift */; };
-		DF623FA31D8B9DD90067156C /* ExpressibleByInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF623F911D8B9DD90067156C /* ExpressibleByInt.swift */; };
-		DF623FA41D8B9DD90067156C /* RotateOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF623F921D8B9DD90067156C /* RotateOperations.swift */; };
-		DF623FA51D8B9DD90067156C /* ShiftOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF623F931D8B9DD90067156C /* ShiftOperations.swift */; };
 		DF623FAA1D8BA5CA0067156C /* Data+HexString.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF623FA61D8BA5CA0067156C /* Data+HexString.swift */; };
 		DF623FAB1D8BA5CA0067156C /* MD5Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF623FA71D8BA5CA0067156C /* MD5Tests.swift */; };
 		DF623FAC1D8BA5CA0067156C /* SHA1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF623FA81D8BA5CA0067156C /* SHA1Tests.swift */; };
@@ -44,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DF1B1C5F1F0A850F0097CE2F /* FixedWidthInteger+Rotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FixedWidthInteger+Rotation.swift"; sourceTree = "<group>"; };
+		DF1B1C611F0A85FE0097CE2F /* BitRotationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitRotationTests.swift; sourceTree = "<group>"; };
 		DF4417D81D9BB61F0024FBFA /* HashFunctionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HashFunctionTests.swift; sourceTree = "<group>"; };
 		DF623F7D1D8B9DD90067156C /* HMAC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMAC.swift; sourceTree = "<group>"; };
 		DF623F7F1D8B9DD90067156C /* Data+HashFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+HashFunction.swift"; sourceTree = "<group>"; };
@@ -59,15 +59,11 @@
 		DF623F8C1D8B9DD90067156C /* SHA512.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHA512.swift; sourceTree = "<group>"; };
 		DF623F8D1D8B9DD90067156C /* SHA1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHA1.swift; sourceTree = "<group>"; };
 		DF623F8E1D8B9DD90067156C /* MerkleDamgardConstructor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MerkleDamgardConstructor.swift; sourceTree = "<group>"; };
-		DF623F901D8B9DD90067156C /* EndianRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndianRepresentable.swift; sourceTree = "<group>"; };
-		DF623F911D8B9DD90067156C /* ExpressibleByInt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpressibleByInt.swift; sourceTree = "<group>"; };
-		DF623F921D8B9DD90067156C /* RotateOperations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RotateOperations.swift; sourceTree = "<group>"; };
-		DF623F931D8B9DD90067156C /* ShiftOperations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShiftOperations.swift; sourceTree = "<group>"; };
 		DF623FA61D8BA5CA0067156C /* Data+HexString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+HexString.swift"; sourceTree = "<group>"; };
 		DF623FA71D8BA5CA0067156C /* MD5Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MD5Tests.swift; sourceTree = "<group>"; };
 		DF623FA81D8BA5CA0067156C /* SHA1Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHA1Tests.swift; sourceTree = "<group>"; };
 		DF623FA91D8BA5CA0067156C /* SHA2Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHA2Tests.swift; sourceTree = "<group>"; };
-		DF623FAE1D8BB1210067156C /* CryptoKit.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CryptoKit.playground; sourceTree = "<group>"; };
+		DF623FAE1D8BB1210067156C /* CryptoKit.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CryptoKit.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		__PBXFileRef_CryptoKit.xcodeproj/Configs/Project.xcconfig /* CryptoKit.xcodeproj/Configs/Project.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = CryptoKit.xcodeproj/Configs/Project.xcconfig; sourceTree = "<group>"; };
 		__PBXFileRef_Package.swift /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		"_____Product_CryptoKit" /* CryptoKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CryptoKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -147,10 +143,7 @@
 		DF623F8F1D8B9DD90067156C /* Math Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				DF623F901D8B9DD90067156C /* EndianRepresentable.swift */,
-				DF623F911D8B9DD90067156C /* ExpressibleByInt.swift */,
-				DF623F921D8B9DD90067156C /* RotateOperations.swift */,
-				DF623F931D8B9DD90067156C /* ShiftOperations.swift */,
+				DF1B1C5F1F0A850F0097CE2F /* FixedWidthInteger+Rotation.swift */,
 			);
 			path = "Math Protocols";
 			sourceTree = "<group>";
@@ -216,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				DF623FA61D8BA5CA0067156C /* Data+HexString.swift */,
+				DF1B1C611F0A85FE0097CE2F /* BitRotationTests.swift */,
 				DF4417D81D9BB61F0024FBFA /* HashFunctionTests.swift */,
 				DF623FA71D8BA5CA0067156C /* MD5Tests.swift */,
 				DF623FA81D8BA5CA0067156C /* SHA1Tests.swift */,
@@ -276,6 +270,14 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 9999;
+				TargetAttributes = {
+					"______Target_CryptoKit" = {
+						LastSwiftMigration = 0900;
+					};
+					"______Target_CryptoKitTests" = {
+						LastSwiftMigration = 0900;
+					};
+				};
 			};
 			buildConfigurationList = "___RootConfs_" /* Build configuration list for PBXProject "CryptoKit" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -300,7 +302,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				DF623FA41D8B9DD90067156C /* RotateOperations.swift in Sources */,
 				DF623F9A1D8B9DD90067156C /* MD5.swift in Sources */,
 				DF623F991D8B9DD90067156C /* HashFunctionOptions.swift in Sources */,
 				DF623F941D8B9DD90067156C /* HMAC.swift in Sources */,
@@ -308,15 +309,13 @@
 				DF623F9B1D8B9DD90067156C /* SHA224.swift in Sources */,
 				DF623F971D8B9DD90067156C /* HashAlgorithm.swift in Sources */,
 				DF623F9D1D8B9DD90067156C /* SHA2Variant.swift in Sources */,
+				DF1B1C601F0A850F0097CE2F /* FixedWidthInteger+Rotation.swift in Sources */,
 				DF623F9C1D8B9DD90067156C /* SHA256.swift in Sources */,
 				DF623F9E1D8B9DD90067156C /* SHA384.swift in Sources */,
-				DF623FA21D8B9DD90067156C /* EndianRepresentable.swift in Sources */,
 				DF623FA01D8B9DD90067156C /* SHA1.swift in Sources */,
 				DF623F951D8B9DD90067156C /* Data+HashFunction.swift in Sources */,
 				DF623FA11D8B9DD90067156C /* MerkleDamgardConstructor.swift in Sources */,
-				DF623FA31D8B9DD90067156C /* ExpressibleByInt.swift in Sources */,
 				DF623F961D8B9DD90067156C /* Data+Int.swift in Sources */,
-				DF623FA51D8B9DD90067156C /* ShiftOperations.swift in Sources */,
 				DF623F981D8B9DD90067156C /* HashFunction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,6 +327,7 @@
 				DF623FAA1D8BA5CA0067156C /* Data+HexString.swift in Sources */,
 				DF623FAB1D8BA5CA0067156C /* MD5Tests.swift in Sources */,
 				DF4417D91D9BB61F0024FBFA /* HashFunctionTests.swift in Sources */,
+				DF1B1C631F0A86840097CE2F /* BitRotationTests.swift in Sources */,
 				DF623FAC1D8BA5CA0067156C /* SHA1Tests.swift in Sources */,
 				DF623FAD1D8BA5CA0067156C /* SHA2Tests.swift in Sources */,
 			);
@@ -358,7 +358,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = CryptoKit;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
@@ -373,7 +373,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks @executable_path/../Frameworks @executable_path/Frameworks";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -392,7 +392,7 @@
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -408,7 +408,7 @@
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
